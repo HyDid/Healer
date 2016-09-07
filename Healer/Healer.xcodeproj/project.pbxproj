@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045DBE961D80220F00CEAB63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBE951D80220F00CEAB63 /* main.m */; };
+		045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */; };
+		045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045DBEA31D80220F00CEAB63 /* Assets.xcassets */; };
+		045DBEA71D80220F00CEAB63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045DBEA51D80220F00CEAB63 /* LaunchScreen.storyboard */; };
+		045DBEB21D80220F00CEAB63 /* HealerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEB11D80220F00CEAB63 /* HealerTests.m */; };
+		045DBEBD1D80220F00CEAB63 /* HealerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEBC1D80220F00CEAB63 /* HealerUITests.m */; };
+		045DBED11D8023BB00CEAB63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBECE1D8023BB00CEAB63 /* AppDelegate.m */; };
+		045DBEF11D80259A00CEAB63 /* HyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF01D80259A00CEAB63 /* HyHomeViewController.m */; };
+		045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF31D802A5900CEAB63 /* HySetViewController.m */; };
+		045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF61D802A7600CEAB63 /* HyFlyViewController.m */; };
+		045DBEFA1D802A8E00CEAB63 /* HyMassageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF91D802A8E00CEAB63 /* HyMassageViewController.m */; };
+		045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEFF1D80379500CEAB63 /* HyBaseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045DBEAE1D80220F00CEAB63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045DBE891D80220F00CEAB63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045DBE901D80220F00CEAB63;
+			remoteInfo = Healer;
+		};
+		045DBEB91D80220F00CEAB63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045DBE891D80220F00CEAB63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045DBE901D80220F00CEAB63;
+			remoteInfo = Healer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045DBE911D80220F00CEAB63 /* Healer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045DBE951D80220F00CEAB63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045DBEA11D80220F00CEAB63 /* Healer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Healer.xcdatamodel; sourceTree = "<group>"; };
+		045DBEA31D80220F00CEAB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045DBEA61D80220F00CEAB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045DBEA81D80220F00CEAB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045DBEAD1D80220F00CEAB63 /* HealerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045DBEB11D80220F00CEAB63 /* HealerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealerTests.m; sourceTree = "<group>"; };
+		045DBEB31D80220F00CEAB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045DBEB81D80220F00CEAB63 /* HealerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045DBEBC1D80220F00CEAB63 /* HealerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealerUITests.m; sourceTree = "<group>"; };
+		045DBEBE1D80220F00CEAB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045DBECD1D8023BB00CEAB63 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045DBECE1D8023BB00CEAB63 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045DBEEF1D80259A00CEAB63 /* HyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyHomeViewController.h; sourceTree = "<group>"; };
+		045DBEF01D80259A00CEAB63 /* HyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyHomeViewController.m; sourceTree = "<group>"; };
+		045DBEF21D802A5900CEAB63 /* HySetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySetViewController.h; sourceTree = "<group>"; };
+		045DBEF31D802A5900CEAB63 /* HySetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySetViewController.m; sourceTree = "<group>"; };
+		045DBEF51D802A7600CEAB63 /* HyFlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyFlyViewController.h; sourceTree = "<group>"; };
+		045DBEF61D802A7600CEAB63 /* HyFlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyFlyViewController.m; sourceTree = "<group>"; };
+		045DBEF81D802A8E00CEAB63 /* HyMassageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMassageViewController.h; sourceTree = "<group>"; };
+		045DBEF91D802A8E00CEAB63 /* HyMassageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMassageViewController.m; sourceTree = "<group>"; };
+		045DBEFE1D80379500CEAB63 /* HyBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBaseViewController.h; sourceTree = "<group>"; };
+		045DBEFF1D80379500CEAB63 /* HyBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBaseViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045DBE8E1D80220F00CEAB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045DBEAA1D80220F00CEAB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045DBEB51D80220F00CEAB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045DBE881D80220F00CEAB63 = {
+			isa = PBXGroup;
+			children = (
+				045DBE931D80220F00CEAB63 /* Healer */,
+				045DBEB01D80220F00CEAB63 /* HealerTests */,
+				045DBEBB1D80220F00CEAB63 /* HealerUITests */,
+				045DBE921D80220F00CEAB63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		045DBE921D80220F00CEAB63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045DBE911D80220F00CEAB63 /* Healer.app */,
+				045DBEAD1D80220F00CEAB63 /* HealerTests.xctest */,
+				045DBEB81D80220F00CEAB63 /* HealerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045DBE931D80220F00CEAB63 /* Healer */ = {
+			isa = PBXGroup;
+			children = (
+				045DBECC1D8023BB00CEAB63 /* class */,
+				045DBEA31D80220F00CEAB63 /* Assets.xcassets */,
+				045DBEA51D80220F00CEAB63 /* LaunchScreen.storyboard */,
+				045DBEA81D80220F00CEAB63 /* Info.plist */,
+				045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */,
+				045DBE941D80220F00CEAB63 /* Supporting Files */,
+			);
+			path = Healer;
+			sourceTree = "<group>";
+		};
+		045DBE941D80220F00CEAB63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				045DBE951D80220F00CEAB63 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		045DBEB01D80220F00CEAB63 /* HealerTests */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEB11D80220F00CEAB63 /* HealerTests.m */,
+				045DBEB31D80220F00CEAB63 /* Info.plist */,
+			);
+			path = HealerTests;
+			sourceTree = "<group>";
+		};
+		045DBEBB1D80220F00CEAB63 /* HealerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEBC1D80220F00CEAB63 /* HealerUITests.m */,
+				045DBEBE1D80220F00CEAB63 /* Info.plist */,
+			);
+			path = HealerUITests;
+			sourceTree = "<group>";
+		};
+		045DBECC1D8023BB00CEAB63 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				045DBECD1D8023BB00CEAB63 /* AppDelegate.h */,
+				045DBECE1D8023BB00CEAB63 /* AppDelegate.m */,
+				045DBED31D80251500CEAB63 /* Fly */,
+				045DBED71D80251500CEAB63 /* Home */,
+				045DBEDB1D80251500CEAB63 /* icon */,
+				045DBEDF1D80251500CEAB63 /* massage */,
+				045DBEE31D80251500CEAB63 /* me */,
+				045DBEE71D80251500CEAB63 /* Self */,
+				045DBEEB1D80251600CEAB63 /* Set */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		045DBED31D80251500CEAB63 /* Fly */ = {
+			isa = PBXGroup;
+			children = (
+				045DBED41D80251500CEAB63 /* Controller */,
+				045DBED51D80251500CEAB63 /* Model */,
+				045DBED61D80251500CEAB63 /* View */,
+			);
+			path = Fly;
+			sourceTree = "<group>";
+		};
+		045DBED41D80251500CEAB63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEF51D802A7600CEAB63 /* HyFlyViewController.h */,
+				045DBEF61D802A7600CEAB63 /* HyFlyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045DBED51D80251500CEAB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045DBED61D80251500CEAB63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045DBED71D80251500CEAB63 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				045DBED81D80251500CEAB63 /* Controller */,
+				045DBED91D80251500CEAB63 /* Model */,
+				045DBEDA1D80251500CEAB63 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		045DBED81D80251500CEAB63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEEF1D80259A00CEAB63 /* HyHomeViewController.h */,
+				045DBEF01D80259A00CEAB63 /* HyHomeViewController.m */,
+				045DBEFE1D80379500CEAB63 /* HyBaseViewController.h */,
+				045DBEFF1D80379500CEAB63 /* HyBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045DBED91D80251500CEAB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045DBEDA1D80251500CEAB63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045DBEDB1D80251500CEAB63 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEDC1D80251500CEAB63 /* Controller */,
+				045DBEDD1D80251500CEAB63 /* Model */,
+				045DBEDE1D80251500CEAB63 /* View */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		045DBEDC1D80251500CEAB63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045DBEDD1D80251500CEAB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045DBEDE1D80251500CEAB63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045DBEDF1D80251500CEAB63 /* massage */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEE01D80251500CEAB63 /* Controller */,
+				045DBEE11D80251500CEAB63 /* Model */,
+				045DBEE21D80251500CEAB63 /* View */,
+			);
+			path = massage;
+			sourceTree = "<group>";
+		};
+		045DBEE01D80251500CEAB63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEF81D802A8E00CEAB63 /* HyMassageViewController.h */,
+				045DBEF91D802A8E00CEAB63 /* HyMassageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045DBEE11D80251500CEAB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045DBEE21D80251500CEAB63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045DBEE31D80251500CEAB63 /* me */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEE41D80251500CEAB63 /* Controller */,
+				045DBEE51D80251500CEAB63 /* Model */,
+				045DBEE61D80251500CEAB63 /* View */,
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
+		045DBEE41D80251500CEAB63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045DBEE51D80251500CEAB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045DBEE61D80251500CEAB63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045DBEE71D80251500CEAB63 /* Self */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEE81D80251600CEAB63 /* Controller */,
+				045DBEE91D80251600CEAB63 /* Model */,
+				045DBEEA1D80251600CEAB63 /* View */,
+			);
+			path = Self;
+			sourceTree = "<group>";
+		};
+		045DBEE81D80251600CEAB63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045DBEE91D80251600CEAB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045DBEEA1D80251600CEAB63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045DBEEB1D80251600CEAB63 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEEC1D80251600CEAB63 /* Controller */,
+				045DBEED1D80251600CEAB63 /* Model */,
+				045DBEEE1D80251600CEAB63 /* View */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		045DBEEC1D80251600CEAB63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045DBEF21D802A5900CEAB63 /* HySetViewController.h */,
+				045DBEF31D802A5900CEAB63 /* HySetViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045DBEED1D80251600CEAB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045DBEEE1D80251600CEAB63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045DBE901D80220F00CEAB63 /* Healer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045DBEC11D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "Healer" */;
+			buildPhases = (
+				045DBE8D1D80220F00CEAB63 /* Sources */,
+				045DBE8E1D80220F00CEAB63 /* Frameworks */,
+				045DBE8F1D80220F00CEAB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Healer;
+			productName = Healer;
+			productReference = 045DBE911D80220F00CEAB63 /* Healer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045DBEAC1D80220F00CEAB63 /* HealerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045DBEC41D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerTests" */;
+			buildPhases = (
+				045DBEA91D80220F00CEAB63 /* Sources */,
+				045DBEAA1D80220F00CEAB63 /* Frameworks */,
+				045DBEAB1D80220F00CEAB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045DBEAF1D80220F00CEAB63 /* PBXTargetDependency */,
+			);
+			name = HealerTests;
+			productName = HealerTests;
+			productReference = 045DBEAD1D80220F00CEAB63 /* HealerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		045DBEB71D80220F00CEAB63 /* HealerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045DBEC71D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerUITests" */;
+			buildPhases = (
+				045DBEB41D80220F00CEAB63 /* Sources */,
+				045DBEB51D80220F00CEAB63 /* Frameworks */,
+				045DBEB61D80220F00CEAB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045DBEBA1D80220F00CEAB63 /* PBXTargetDependency */,
+			);
+			name = HealerUITests;
+			productName = HealerUITests;
+			productReference = 045DBEB81D80220F00CEAB63 /* HealerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045DBE891D80220F00CEAB63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LiHongYu;
+				TargetAttributes = {
+					045DBE901D80220F00CEAB63 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					045DBEAC1D80220F00CEAB63 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 045DBE901D80220F00CEAB63;
+					};
+					045DBEB71D80220F00CEAB63 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 045DBE901D80220F00CEAB63;
+					};
+				};
+			};
+			buildConfigurationList = 045DBE8C1D80220F00CEAB63 /* Build configuration list for PBXProject "Healer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045DBE881D80220F00CEAB63;
+			productRefGroup = 045DBE921D80220F00CEAB63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045DBE901D80220F00CEAB63 /* Healer */,
+				045DBEAC1D80220F00CEAB63 /* HealerTests */,
+				045DBEB71D80220F00CEAB63 /* HealerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045DBE8F1D80220F00CEAB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045DBEA71D80220F00CEAB63 /* LaunchScreen.storyboard in Resources */,
+				045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045DBEAB1D80220F00CEAB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045DBEB61D80220F00CEAB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045DBE8D1D80220F00CEAB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */,
+				045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */,
+				045DBE961D80220F00CEAB63 /* main.m in Sources */,
+				045DBEFA1D802A8E00CEAB63 /* HyMassageViewController.m in Sources */,
+				045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */,
+				045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */,
+				045DBEF11D80259A00CEAB63 /* HyHomeViewController.m in Sources */,
+				045DBED11D8023BB00CEAB63 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045DBEA91D80220F00CEAB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045DBEB21D80220F00CEAB63 /* HealerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045DBEB41D80220F00CEAB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045DBEBD1D80220F00CEAB63 /* HealerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045DBEAF1D80220F00CEAB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045DBE901D80220F00CEAB63 /* Healer */;
+			targetProxy = 045DBEAE1D80220F00CEAB63 /* PBXContainerItemProxy */;
+		};
+		045DBEBA1D80220F00CEAB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045DBE901D80220F00CEAB63 /* Healer */;
+			targetProxy = 045DBEB91D80220F00CEAB63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		045DBEA51D80220F00CEAB63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045DBEA61D80220F00CEAB63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045DBEBF1D80220F00CEAB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		045DBEC01D80220F00CEAB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045DBEC21D80220F00CEAB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Healer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.Healer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		045DBEC31D80220F00CEAB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Healer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.Healer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		045DBEC51D80220F00CEAB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HealerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.HealerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healer.app/Healer";
+			};
+			name = Debug;
+		};
+		045DBEC61D80220F00CEAB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HealerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.HealerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healer.app/Healer";
+			};
+			name = Release;
+		};
+		045DBEC81D80220F00CEAB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HealerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.HealerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Healer;
+			};
+			name = Debug;
+		};
+		045DBEC91D80220F00CEAB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HealerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.HealerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Healer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045DBE8C1D80220F00CEAB63 /* Build configuration list for PBXProject "Healer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045DBEBF1D80220F00CEAB63 /* Debug */,
+				045DBEC01D80220F00CEAB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045DBEC11D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "Healer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045DBEC21D80220F00CEAB63 /* Debug */,
+				045DBEC31D80220F00CEAB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		045DBEC41D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045DBEC51D80220F00CEAB63 /* Debug */,
+				045DBEC61D80220F00CEAB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		045DBEC71D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045DBEC81D80220F00CEAB63 /* Debug */,
+				045DBEC91D80220F00CEAB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				045DBEA11D80220F00CEAB63 /* Healer.xcdatamodel */,
+			);
+			currentVersion = 045DBEA11D80220F00CEAB63 /* Healer.xcdatamodel */;
+			path = Healer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 045DBE891D80220F00CEAB63 /* Project object */;
+}
