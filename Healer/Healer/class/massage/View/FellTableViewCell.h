@@ -15,9 +15,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *edit;
 @property (weak, nonatomic) IBOutlet UILabel *god;
 @property (weak, nonatomic) IBOutlet UILabel *eye;
+@property (weak, nonatomic) IBOutlet UIButton *more;
 
 
 @property (strong,nonatomic) HotTalk *hottalk;
-+(CGFloat)cellhight;
 +(instancetype)cellWithTableView:(UITableView *)table;
 @end

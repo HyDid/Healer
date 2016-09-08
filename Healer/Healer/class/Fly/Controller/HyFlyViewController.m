@@ -8,6 +8,7 @@
 
 #import "HyFlyViewController.h"
 #import "FellTableViewCell.h"
+#import "hotMoreView.h"
 
 @interface HyFlyViewController ()<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
@@ -15,6 +16,8 @@
 @property (nonatomic,weak)UIPageControl *pagecontrol;
 @property (nonatomic,weak)UIView *actionView;
 @property (nonatomic,weak)UITableView  *TalkTableView;
+@property (nonatomic,copy)NSMutableArray *hotTalkArray;
+@property (nonatomic,weak)hotMoreView *moreView;
 @end
 
 @implementation HyFlyViewController
@@ -31,15 +34,32 @@ static const int imageCount = 5;
     
 }
 
-- (void)viewDidLayoutSubviews {
-    
-    [super viewDidLayoutSubviews];
-    [self didscrolView];
-}
+//- (void)viewDidLayoutSubviews {
+//    
+//    [super viewDidLayoutSubviews];
+//
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self didscrolView];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self didactionView];
     [self didTalkTableView];
+    
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"hottalk.plist" ofType:nil];
+    NSArray *talkDicts = [NSArray arrayWithContentsOfFile:path];
+    for (NSDictionary *dict in talkDicts) {
+        HotTalk *hottalk = [HotTalk hottalkWithDict:dict];
+        [self.hotTalkArray addObject:hottalk];
+    }
+}
+
+-(NSMutableArray *)hotTalkArray{
+    if (!_hotTalkArray) {
+        _hotTalkArray = [NSMutableArray array];
+    }
+    return _hotTalkArray;
 }
 
 
@@ -73,7 +93,7 @@ static const int imageCount = 5;
 
     //设置pageview的属性
     UIPageControl *pageControl = [[UIPageControl alloc]init];
-    pageControl.frame = CGRectMake(0, ScreenH*0.32, ScreenW, 20);
+    pageControl.frame = CGRectMake(0, ScreenH*0.33, ScreenW, 20);
     
     pageControl.numberOfPages = imageCount;
     [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
@@ -108,10 +128,10 @@ static const int imageCount = 5;
     
     NSArray *ImageArray = @[@"xie",@"jian",@"fa"];
     NSArray *LableArray = @[@"写",@"捡",@"发泄墙"];
-    
+    CGFloat imageW = 55;
     for (int i = 0; i <3; i++) {
         UIButton *btn = [[UIButton alloc]init];
-        btn.frame = CGRectMake(i*100+70, 10, 50, 50);
+        btn.frame = CGRectMake(i*ScreenW/3+ScreenW/6-imageW/2, 2, imageW, imageW);
 
         btn.tag = i;
         
@@ -119,18 +139,29 @@ static const int imageCount = 5;
     [btn addTarget:self action:@selector(actionClick:) forControlEvents:UIControlEventTouchUpInside];
         
         UILabel *lab = [[UILabel alloc]init];
-        lab.frame = CGRectMake(i*100+70, 60, 50, 30);
-        
+
+        lab.frame = CGRectMake(i*ScreenW/3, 55, ScreenW/3, 30);
+        lab.textAlignment = NSTextAlignmentCenter;
+        lab.font = [UIFont systemFontOfSize:13 weight:1];
         lab.tag = i;
         
         [lab setText:LableArray[i]];
         
 
         [actionView addSubview:btn];
-    [actionView addSubview:lab];
-        
+        [actionView addSubview:lab];
     
     }
+    UIView *lineview = [[UIView alloc]init];
+    lineview.backgroundColor = [UIColor lightGrayColor];
+    lineview.frame = CGRectMake(ScreenW/3, 20, 1.5, 35);
+    [actionView addSubview:lineview];
+    UIView *lineview2 = [[UIView alloc]init];
+    lineview2.backgroundColor = [UIColor lightGrayColor];
+    lineview2.frame = CGRectMake(ScreenW*2/3, 20, 1.5, 35);
+    [actionView addSubview:lineview2];
+
+    
     self.actionView = actionView;
     [self.view addSubview:self.actionView];
     
@@ -168,26 +199,81 @@ static const int imageCount = 5;
     }
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @"热门话题";
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    UIView *headview = [[UIView alloc]init];
+    headview.backgroundColor = [UIColor whiteColor];
+    UIImageView *hotview = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"hot"]];
+    hotview.frame = CGRectMake(10, 10, 20, 20);
+    
+    UILabel *lab = [[UILabel alloc]init];
+    lab.frame = CGRectMake(40, 10, 200, 20);
+    lab.textAlignment = NSTextAlignmentLeft;
+    lab.font = [UIFont systemFontOfSize:15 weight:1];
+    [lab setText:@"热 门 话 题"];
+    
+    UIView *lineview = [[UIView alloc]init];
+    lineview.backgroundColor = [UIColor lightGrayColor];
+    lineview.frame = CGRectMake(0, 48, ScreenW, 1);
+    
+    [headview addSubview:lineview];
+    [headview addSubview:lab];
+    [headview addSubview:hotview];
+
+    return headview;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 55;
+    return 50;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 100;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return self.hotTalkArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     FellTableViewCell *cell = [FellTableViewCell cellWithTableView:self.TalkTableView];
+    cell.hottalk = self.hotTalkArray[indexPath.row];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"selected");
+    
+    hotMoreView *moreView=[hotMoreView viewwithhotmore];
+    moreView.frame = CGRectMake(0, ScreenH, ScreenW, ScreenH*0.5);
+    moreView.hottalk = self.hotTalkArray[indexPath.row];
+    
+    self.moreView = moreView;
+    
+    [self.view addSubview:moreView];
+    
+    [moreView.back addTarget:self action:@selector(moreViewBtn) forControlEvents:UIControlEventTouchUpInside];
+    
+
+    [UIView animateWithDuration:0.4 animations:^{
+        
+        self.TalkTableView.transform = CGAffineTransformMakeTranslation(ScreenW, 0);
+        self.moreView.transform = CGAffineTransformMakeTranslation(0, -ScreenH*0.5);
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
 }
+-(void)moreViewBtn{
+    
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        self.TalkTableView.transform = CGAffineTransformMakeTranslation(0, 0);
+        self.moreView.transform = CGAffineTransformMakeTranslation(0, ScreenH);
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
+
 
 @end

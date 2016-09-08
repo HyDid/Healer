@@ -31,9 +31,7 @@
     }
     return cell;
 }
-+(CGFloat)cellhight{
-    return 100;
-}
+
 
 
 -(void)setHottalk:(HotTalk *)hottalk{
@@ -42,6 +40,8 @@
     self.icon.image = [UIImage imageNamed:hottalk.icon];
     self.name.text = hottalk.name;
     self.edit.text = hottalk.edit;
+    self.god.text = hottalk.cheer;
+    self.eye.text = hottalk.eye;
 }
 
 

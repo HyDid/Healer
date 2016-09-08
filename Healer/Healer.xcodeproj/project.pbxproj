@@ -24,6 +24,7 @@
 		045DBF171D81712300CEAB63 /* hotMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF131D81712300CEAB63 /* hotMoreView.m */; };
 		045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF141D81712300CEAB63 /* hotMoreView.xib */; };
 		045DBF1B1D81712900CEAB63 /* HotTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF1A1D81712900CEAB63 /* HotTalk.m */; };
+		045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF1C1D8179BA00CEAB63 /* hottalk.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		045DBF141D81712300CEAB63 /* hotMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = hotMoreView.xib; path = ../../massage/View/hotMoreView.xib; sourceTree = "<group>"; };
 		045DBF191D81712900CEAB63 /* HotTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotTalk.h; path = ../../massage/Model/HotTalk.h; sourceTree = "<group>"; };
 		045DBF1A1D81712900CEAB63 /* HotTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotTalk.m; path = ../../massage/Model/HotTalk.m; sourceTree = "<group>"; };
+		045DBF1C1D8179BA00CEAB63 /* hottalk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hottalk.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		045DBE941D80220F00CEAB63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				045DBF1C1D8179BA00CEAB63 /* hottalk.plist */,
 				045DBE951D80220F00CEAB63 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -520,6 +523,7 @@
 			files = (
 				045DBF161D81712300CEAB63 /* FellTableViewCell.xib in Resources */,
 				045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */,
+				045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */,
 				045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

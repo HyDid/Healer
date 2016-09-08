@@ -51,12 +51,13 @@
                         <rect key="frame" x="14" y="99" width="335" height="1"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&gt;&gt;阅读全文" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnm-VZ-fWp">
-                        <rect key="frame" x="166" y="74" width="60" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trx-ek-d0n">
+                        <rect key="frame" x="166" y="74" width="55" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="&gt;&gt;阅读全文">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -64,6 +65,7 @@
                 <outlet property="eye" destination="P59-5H-HHY" id="CNO-hX-Sob"/>
                 <outlet property="god" destination="bdd-sp-Al0" id="uJa-dG-b4P"/>
                 <outlet property="icon" destination="v51-9P-kzu" id="THO-UB-9PL"/>
+                <outlet property="more" destination="Trx-ek-d0n" id="Fo1-px-kkG"/>
                 <outlet property="name" destination="HgI-yu-hoo" id="WEq-lW-ivk"/>
             </connections>
             <point key="canvasLocation" x="423.5" y="362"/>
