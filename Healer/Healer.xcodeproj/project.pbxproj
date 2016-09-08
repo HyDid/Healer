@@ -10,7 +10,6 @@
 		045DBE961D80220F00CEAB63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBE951D80220F00CEAB63 /* main.m */; };
 		045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */; };
 		045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045DBEA31D80220F00CEAB63 /* Assets.xcassets */; };
-		045DBEA71D80220F00CEAB63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045DBEA51D80220F00CEAB63 /* LaunchScreen.storyboard */; };
 		045DBEB21D80220F00CEAB63 /* HealerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEB11D80220F00CEAB63 /* HealerTests.m */; };
 		045DBEBD1D80220F00CEAB63 /* HealerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEBC1D80220F00CEAB63 /* HealerUITests.m */; };
 		045DBED11D8023BB00CEAB63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBECE1D8023BB00CEAB63 /* AppDelegate.m */; };
@@ -19,6 +18,12 @@
 		045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF61D802A7600CEAB63 /* HyFlyViewController.m */; };
 		045DBEFA1D802A8E00CEAB63 /* HyMassageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF91D802A8E00CEAB63 /* HyMassageViewController.m */; };
 		045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEFF1D80379500CEAB63 /* HyBaseViewController.m */; };
+		045DBF0C1D8144AF00CEAB63 /* HyCustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF0B1D8144AF00CEAB63 /* HyCustomScrollView.m */; };
+		045DBF151D81712300CEAB63 /* FellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF101D81712300CEAB63 /* FellTableViewCell.m */; };
+		045DBF161D81712300CEAB63 /* FellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF111D81712300CEAB63 /* FellTableViewCell.xib */; };
+		045DBF171D81712300CEAB63 /* hotMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF131D81712300CEAB63 /* hotMoreView.m */; };
+		045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF141D81712300CEAB63 /* hotMoreView.xib */; };
+		045DBF1B1D81712900CEAB63 /* HotTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF1A1D81712900CEAB63 /* HotTalk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +48,6 @@
 		045DBE951D80220F00CEAB63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045DBEA11D80220F00CEAB63 /* Healer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Healer.xcdatamodel; sourceTree = "<group>"; };
 		045DBEA31D80220F00CEAB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		045DBEA61D80220F00CEAB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045DBEA81D80220F00CEAB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045DBEAD1D80220F00CEAB63 /* HealerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045DBEB11D80220F00CEAB63 /* HealerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealerTests.m; sourceTree = "<group>"; };
@@ -63,6 +67,16 @@
 		045DBEF91D802A8E00CEAB63 /* HyMassageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMassageViewController.m; sourceTree = "<group>"; };
 		045DBEFE1D80379500CEAB63 /* HyBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBaseViewController.h; sourceTree = "<group>"; };
 		045DBEFF1D80379500CEAB63 /* HyBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBaseViewController.m; sourceTree = "<group>"; };
+		045DBF0A1D8144AF00CEAB63 /* HyCustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyCustomScrollView.h; sourceTree = "<group>"; };
+		045DBF0B1D8144AF00CEAB63 /* HyCustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyCustomScrollView.m; sourceTree = "<group>"; };
+		045DBF0F1D81712300CEAB63 /* FellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FellTableViewCell.h; path = ../../massage/View/FellTableViewCell.h; sourceTree = "<group>"; };
+		045DBF101D81712300CEAB63 /* FellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FellTableViewCell.m; path = ../../massage/View/FellTableViewCell.m; sourceTree = "<group>"; };
+		045DBF111D81712300CEAB63 /* FellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FellTableViewCell.xib; path = ../../massage/View/FellTableViewCell.xib; sourceTree = "<group>"; };
+		045DBF121D81712300CEAB63 /* hotMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hotMoreView.h; path = ../../massage/View/hotMoreView.h; sourceTree = "<group>"; };
+		045DBF131D81712300CEAB63 /* hotMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hotMoreView.m; path = ../../massage/View/hotMoreView.m; sourceTree = "<group>"; };
+		045DBF141D81712300CEAB63 /* hotMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = hotMoreView.xib; path = ../../massage/View/hotMoreView.xib; sourceTree = "<group>"; };
+		045DBF191D81712900CEAB63 /* HotTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotTalk.h; path = ../../massage/Model/HotTalk.h; sourceTree = "<group>"; };
+		045DBF1A1D81712900CEAB63 /* HotTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotTalk.m; path = ../../massage/Model/HotTalk.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +129,6 @@
 			children = (
 				045DBECC1D8023BB00CEAB63 /* class */,
 				045DBEA31D80220F00CEAB63 /* Assets.xcassets */,
-				045DBEA51D80220F00CEAB63 /* LaunchScreen.storyboard */,
 				045DBEA81D80220F00CEAB63 /* Info.plist */,
 				045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */,
 				045DBE941D80220F00CEAB63 /* Supporting Files */,
@@ -187,6 +200,8 @@
 		045DBED51D80251500CEAB63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				045DBF191D81712900CEAB63 /* HotTalk.h */,
+				045DBF1A1D81712900CEAB63 /* HotTalk.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +209,14 @@
 		045DBED61D80251500CEAB63 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				045DBF0F1D81712300CEAB63 /* FellTableViewCell.h */,
+				045DBF101D81712300CEAB63 /* FellTableViewCell.m */,
+				045DBF111D81712300CEAB63 /* FellTableViewCell.xib */,
+				045DBF121D81712300CEAB63 /* hotMoreView.h */,
+				045DBF131D81712300CEAB63 /* hotMoreView.m */,
+				045DBF141D81712300CEAB63 /* hotMoreView.xib */,
+				045DBF0A1D8144AF00CEAB63 /* HyCustomScrollView.h */,
+				045DBF0B1D8144AF00CEAB63 /* HyCustomScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,8 +518,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045DBEA71D80220F00CEAB63 /* LaunchScreen.storyboard in Resources */,
+				045DBF161D81712300CEAB63 /* FellTableViewCell.xib in Resources */,
 				045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */,
+				045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,13 +546,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */,
+				045DBF0C1D8144AF00CEAB63 /* HyCustomScrollView.m in Sources */,
 				045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */,
 				045DBE961D80220F00CEAB63 /* main.m in Sources */,
+				045DBF151D81712300CEAB63 /* FellTableViewCell.m in Sources */,
 				045DBEFA1D802A8E00CEAB63 /* HyMassageViewController.m in Sources */,
 				045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */,
 				045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */,
 				045DBEF11D80259A00CEAB63 /* HyHomeViewController.m in Sources */,
+				045DBF171D81712300CEAB63 /* hotMoreView.m in Sources */,
 				045DBED11D8023BB00CEAB63 /* AppDelegate.m in Sources */,
+				045DBF1B1D81712900CEAB63 /* HotTalk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,17 +590,6 @@
 			targetProxy = 045DBEB91D80220F00CEAB63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		045DBEA51D80220F00CEAB63 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				045DBEA61D80220F00CEAB63 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		045DBEBF1D80220F00CEAB63 /* Debug */ = {
