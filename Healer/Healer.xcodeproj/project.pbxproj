@@ -25,6 +25,9 @@
 		045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF141D81712300CEAB63 /* hotMoreView.xib */; };
 		045DBF1B1D81712900CEAB63 /* HotTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF1A1D81712900CEAB63 /* HotTalk.m */; };
 		045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF1C1D8179BA00CEAB63 /* hottalk.plist */; };
+		051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8467715469124D0E7CB863 /* libPods-Healer.a */; };
+		3BA93BD4B35B96E1291BAAD0 /* libPods-HealerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88ED2B00D85A9EAEB157004C /* libPods-HealerUITests.a */; };
+		901D41A6D6448326EB455E16 /* libPods-HealerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7751DE73A49ADEF1E4ECA6E9 /* libPods-HealerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,15 @@
 		045DBF191D81712900CEAB63 /* HotTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotTalk.h; path = ../../massage/Model/HotTalk.h; sourceTree = "<group>"; };
 		045DBF1A1D81712900CEAB63 /* HotTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotTalk.m; path = ../../massage/Model/HotTalk.m; sourceTree = "<group>"; };
 		045DBF1C1D8179BA00CEAB63 /* hottalk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hottalk.plist; sourceTree = "<group>"; };
+		082B2647332ECD851D530746 /* Pods-HealerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealerUITests/Pods-HealerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		11879738F75F0DF39013A748 /* Pods-Healer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healer/Pods-Healer.debug.xcconfig"; sourceTree = "<group>"; };
+		35A687B0CBD5C316FD233EF5 /* Pods-HealerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealerTests/Pods-HealerTests.release.xcconfig"; sourceTree = "<group>"; };
+		48EAE4A167B92FDA2DE03321 /* Pods-Healer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healer/Pods-Healer.release.xcconfig"; sourceTree = "<group>"; };
+		7751DE73A49ADEF1E4ECA6E9 /* libPods-HealerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8467715469124D0E7CB863 /* libPods-Healer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Healer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88ED2B00D85A9EAEB157004C /* libPods-HealerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96ACD205A9A8C33865380285 /* Pods-HealerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealerTests/Pods-HealerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABFA1F3E56E23CC645AB732D /* Pods-HealerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealerUITests/Pods-HealerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901D41A6D6448326EB455E16 /* libPods-HealerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +114,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA93BD4B35B96E1291BAAD0 /* libPods-HealerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0413E0211D823D5C00CF0B66 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		045DBE881D80220F00CEAB63 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,8 @@
 				045DBEB01D80220F00CEAB63 /* HealerTests */,
 				045DBEBB1D80220F00CEAB63 /* HealerUITests */,
 				045DBE921D80220F00CEAB63 /* Products */,
+				70F9D548164199934C4C7EAF /* Pods */,
+				96BE6BF6F539A2CD4951F4D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +251,7 @@
 		045DBED71D80251500CEAB63 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0413E0211D823D5C00CF0B66 /* Tool */,
 				045DBED81D80251500CEAB63 /* Controller */,
 				045DBED91D80251500CEAB63 /* Model */,
 				045DBEDA1D80251500CEAB63 /* View */,
@@ -418,6 +443,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		70F9D548164199934C4C7EAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11879738F75F0DF39013A748 /* Pods-Healer.debug.xcconfig */,
+				48EAE4A167B92FDA2DE03321 /* Pods-Healer.release.xcconfig */,
+				96ACD205A9A8C33865380285 /* Pods-HealerTests.debug.xcconfig */,
+				35A687B0CBD5C316FD233EF5 /* Pods-HealerTests.release.xcconfig */,
+				ABFA1F3E56E23CC645AB732D /* Pods-HealerUITests.debug.xcconfig */,
+				082B2647332ECD851D530746 /* Pods-HealerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96BE6BF6F539A2CD4951F4D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B8467715469124D0E7CB863 /* libPods-Healer.a */,
+				7751DE73A49ADEF1E4ECA6E9 /* libPods-HealerTests.a */,
+				88ED2B00D85A9EAEB157004C /* libPods-HealerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,9 +473,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045DBEC11D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "Healer" */;
 			buildPhases = (
+				8E165DE07B48C6857EA09B27 /* [CP] Check Pods Manifest.lock */,
 				045DBE8D1D80220F00CEAB63 /* Sources */,
 				045DBE8E1D80220F00CEAB63 /* Frameworks */,
 				045DBE8F1D80220F00CEAB63 /* Resources */,
+				DE3500EF7D6A5893F9930058 /* [CP] Embed Pods Frameworks */,
+				90CB76B5AB0072454E2276A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -442,9 +493,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045DBEC41D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerTests" */;
 			buildPhases = (
+				7802390C2D0D04ED46CF8CC1 /* [CP] Check Pods Manifest.lock */,
 				045DBEA91D80220F00CEAB63 /* Sources */,
 				045DBEAA1D80220F00CEAB63 /* Frameworks */,
 				045DBEAB1D80220F00CEAB63 /* Resources */,
+				F7A3CD63B41C7ADE4239D994 /* [CP] Embed Pods Frameworks */,
+				20A4F6CFE1A60A5D3B1E542D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -460,9 +514,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045DBEC71D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerUITests" */;
 			buildPhases = (
+				C3EBE5461CD39EA1F0F1F3DF /* [CP] Check Pods Manifest.lock */,
 				045DBEB41D80220F00CEAB63 /* Sources */,
 				045DBEB51D80220F00CEAB63 /* Frameworks */,
 				045DBEB61D80220F00CEAB63 /* Resources */,
+				0A1321BCDE5B9F57D808FEFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -543,6 +599,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A1321BCDE5B9F57D808FEFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealerUITests/Pods-HealerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20A4F6CFE1A60A5D3B1E542D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealerTests/Pods-HealerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7802390C2D0D04ED46CF8CC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E165DE07B48C6857EA09B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90CB76B5AB0072454E2276A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Healer/Pods-Healer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3EBE5461CD39EA1F0F1F3DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3500EF7D6A5893F9930058 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Healer/Pods-Healer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A3CD63B41C7ADE4239D994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealerTests/Pods-HealerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		045DBE8D1D80220F00CEAB63 /* Sources */ = {
@@ -680,6 +859,7 @@
 		};
 		045DBEC21D80220F00CEAB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11879738F75F0DF39013A748 /* Pods-Healer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Healer/Info.plist;
@@ -691,6 +871,7 @@
 		};
 		045DBEC31D80220F00CEAB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48EAE4A167B92FDA2DE03321 /* Pods-Healer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Healer/Info.plist;
@@ -702,6 +883,7 @@
 		};
 		045DBEC51D80220F00CEAB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96ACD205A9A8C33865380285 /* Pods-HealerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HealerTests/Info.plist;
@@ -714,6 +896,7 @@
 		};
 		045DBEC61D80220F00CEAB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A687B0CBD5C316FD233EF5 /* Pods-HealerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HealerTests/Info.plist;
@@ -726,6 +909,7 @@
 		};
 		045DBEC81D80220F00CEAB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFA1F3E56E23CC645AB732D /* Pods-HealerUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HealerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -737,6 +921,7 @@
 		};
 		045DBEC91D80220F00CEAB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 082B2647332ECD851D530746 /* Pods-HealerUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HealerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -765,6 +950,7 @@
 				045DBEC31D80220F00CEAB63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045DBEC41D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerTests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +959,7 @@
 				045DBEC61D80220F00CEAB63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045DBEC71D80220F00CEAB63 /* Build configuration list for PBXNativeTarget "HealerUITests" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +968,7 @@
 				045DBEC91D80220F00CEAB63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

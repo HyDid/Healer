@@ -9,6 +9,7 @@
 #import "HyFlyViewController.h"
 #import "FellTableViewCell.h"
 #import "hotMoreView.h"
+//#import "AFNetworking.h"
 
 @interface HyFlyViewController ()<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
@@ -46,6 +47,20 @@ static const int imageCount = 5;
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self didactionView];
     [self didTalkTableView];
+    
+//    AFHTTPSessionManager *mar = [AFHTTPSessionManager manager];
+//    mar.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+//    mar.requestSerializer.timeoutInterval = 10;
+//    
+//    NSString *url = [NSString stringWithFormat:@"http://127.0.0.1:8081/listUsers"];
+//    [mar POST:url parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+//        NSLog(@"%@",responseObject);
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//        
+//    }];
+    
+    
+    
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"hottalk.plist" ofType:nil];
     NSArray *talkDicts = [NSArray arrayWithContentsOfFile:path];
