@@ -35,11 +35,7 @@ static const int imageCount = 5;
     
 }
 
-//- (void)viewDidLayoutSubviews {
-//    
-//    [super viewDidLayoutSubviews];
-//
-//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -58,8 +54,6 @@ static const int imageCount = 5;
 //    } failure:^(NSURLSessionDataTask *task, NSError *error) {
 //        
 //    }];
-    
-    
     
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"hottalk.plist" ofType:nil];
@@ -232,7 +226,7 @@ static const int imageCount = 5;
     lineview.backgroundColor = [UIColor lightGrayColor];
     lineview.frame = CGRectMake(0, 48, ScreenW, 1);
     
-    [headview addSubview:lineview];
+//    [headview addSubview:lineview];
     [headview addSubview:lab];
     [headview addSubview:hotview];
 
@@ -256,6 +250,7 @@ static const int imageCount = 5;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     hotMoreView *moreView=[hotMoreView viewwithhotmore];
     moreView.frame = CGRectMake(0, ScreenH, ScreenW, ScreenH*0.5);
     moreView.hottalk = self.hotTalkArray[indexPath.row];

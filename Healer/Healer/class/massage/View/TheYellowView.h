@@ -13,11 +13,12 @@
 @optional
 
 -(void)btnOnClick:(NSString*)ButtonText Frame:(CGRect)frame;
--(void)didbtnOnClick;
+-(void)didbtnOnClick:(NSString *)textFieldString;
 
 @end
 
 @interface TheYellowView : UIView
 
+@property(nonatomic,strong)UITextField *textfield;
 @property(nonatomic,weak)id<TheYellowViewDelegate>delegate;
 @end

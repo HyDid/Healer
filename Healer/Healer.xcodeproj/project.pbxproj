@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC2751D8E24D900EC908C /* TheYellowView.m */; };
 		044AC27C1D8E6ABD00EC908C /* LittleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27B1D8E6ABD00EC908C /* LittleButton.m */; };
+		044AC27F1D8EB13300EC908C /* yisheng.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27E1D8EB13300EC908C /* yisheng.m */; };
+		044AC2831D8EB13D00EC908C /* HyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC2811D8EB13D00EC908C /* HyTableViewCell.m */; };
+		044AC2841D8EB13D00EC908C /* HyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044AC2821D8EB13D00EC908C /* HyTableViewCell.xib */; };
+		044AC2871D8EB52F00EC908C /* xinlingjitang1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044AC2851D8EB52F00EC908C /* xinlingjitang1.xib */; };
+		044AC2881D8EB52F00EC908C /* xinlingjitang2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044AC2861D8EB52F00EC908C /* xinlingjitang2.xib */; };
+		044AC28B1D8EB5F200EC908C /* xinlingjitang1View.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC28A1D8EB5F200EC908C /* xinlingjitang1View.m */; };
+		044AC28E1D8EB60B00EC908C /* smallLableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC28D1D8EB60B00EC908C /* smallLableView.m */; };
+		044AC2911D8EB61C00EC908C /* smallLableViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC2901D8EB61C00EC908C /* smallLableViewObject.m */; };
 		045DBE961D80220F00CEAB63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBE951D80220F00CEAB63 /* main.m */; };
 		045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */; };
 		045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045DBEA31D80220F00CEAB63 /* Assets.xcassets */; };
@@ -54,6 +62,19 @@
 		044AC2751D8E24D900EC908C /* TheYellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheYellowView.m; sourceTree = "<group>"; };
 		044AC27A1D8E6ABD00EC908C /* LittleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleButton.h; sourceTree = "<group>"; };
 		044AC27B1D8E6ABD00EC908C /* LittleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LittleButton.m; sourceTree = "<group>"; };
+		044AC27D1D8EB13300EC908C /* yisheng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yisheng.h; sourceTree = "<group>"; };
+		044AC27E1D8EB13300EC908C /* yisheng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yisheng.m; sourceTree = "<group>"; };
+		044AC2801D8EB13D00EC908C /* HyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTableViewCell.h; sourceTree = "<group>"; };
+		044AC2811D8EB13D00EC908C /* HyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTableViewCell.m; sourceTree = "<group>"; };
+		044AC2821D8EB13D00EC908C /* HyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyTableViewCell.xib; sourceTree = "<group>"; };
+		044AC2851D8EB52F00EC908C /* xinlingjitang1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xinlingjitang1.xib; sourceTree = "<group>"; };
+		044AC2861D8EB52F00EC908C /* xinlingjitang2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xinlingjitang2.xib; sourceTree = "<group>"; };
+		044AC2891D8EB5F200EC908C /* xinlingjitang1View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinlingjitang1View.h; sourceTree = "<group>"; };
+		044AC28A1D8EB5F200EC908C /* xinlingjitang1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinlingjitang1View.m; sourceTree = "<group>"; };
+		044AC28C1D8EB60B00EC908C /* smallLableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smallLableView.h; sourceTree = "<group>"; };
+		044AC28D1D8EB60B00EC908C /* smallLableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smallLableView.m; sourceTree = "<group>"; };
+		044AC28F1D8EB61C00EC908C /* smallLableViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smallLableViewObject.h; sourceTree = "<group>"; };
+		044AC2901D8EB61C00EC908C /* smallLableViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smallLableViewObject.m; sourceTree = "<group>"; };
 		045DBE911D80220F00CEAB63 /* Healer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045DBE951D80220F00CEAB63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045DBEA11D80220F00CEAB63 /* Healer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Healer.xcdatamodel; sourceTree = "<group>"; };
@@ -343,6 +364,10 @@
 		045DBEE11D80251500CEAB63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				044AC28F1D8EB61C00EC908C /* smallLableViewObject.h */,
+				044AC2901D8EB61C00EC908C /* smallLableViewObject.m */,
+				044AC27D1D8EB13300EC908C /* yisheng.h */,
+				044AC27E1D8EB13300EC908C /* yisheng.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -350,6 +375,15 @@
 		045DBEE21D80251500CEAB63 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				044AC28C1D8EB60B00EC908C /* smallLableView.h */,
+				044AC28D1D8EB60B00EC908C /* smallLableView.m */,
+				044AC2891D8EB5F200EC908C /* xinlingjitang1View.h */,
+				044AC28A1D8EB5F200EC908C /* xinlingjitang1View.m */,
+				044AC2851D8EB52F00EC908C /* xinlingjitang1.xib */,
+				044AC2861D8EB52F00EC908C /* xinlingjitang2.xib */,
+				044AC2801D8EB13D00EC908C /* HyTableViewCell.h */,
+				044AC2811D8EB13D00EC908C /* HyTableViewCell.m */,
+				044AC2821D8EB13D00EC908C /* HyTableViewCell.xib */,
 				044AC2741D8E24D900EC908C /* TheYellowView.h */,
 				044AC2751D8E24D900EC908C /* TheYellowView.m */,
 				044AC27A1D8E6ABD00EC908C /* LittleButton.h */,
@@ -587,8 +621,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044AC2871D8EB52F00EC908C /* xinlingjitang1.xib in Resources */,
 				045DBF161D81712300CEAB63 /* FellTableViewCell.xib in Resources */,
+				044AC2841D8EB13D00EC908C /* HyTableViewCell.xib in Resources */,
 				045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */,
+				044AC2881D8EB52F00EC908C /* xinlingjitang2.xib in Resources */,
 				045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */,
 				045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */,
 			);
@@ -738,9 +775,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044AC2911D8EB61C00EC908C /* smallLableViewObject.m in Sources */,
+				044AC2831D8EB13D00EC908C /* HyTableViewCell.m in Sources */,
+				044AC28E1D8EB60B00EC908C /* smallLableView.m in Sources */,
+				044AC27F1D8EB13300EC908C /* yisheng.m in Sources */,
 				045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */,
 				045DBF0C1D8144AF00CEAB63 /* HyCustomScrollView.m in Sources */,
 				045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */,
+				044AC28B1D8EB5F200EC908C /* xinlingjitang1View.m in Sources */,
 				045DBE961D80220F00CEAB63 /* main.m in Sources */,
 				045DBF151D81712300CEAB63 /* FellTableViewCell.m in Sources */,
 				044AC27C1D8E6ABD00EC908C /* LittleButton.m in Sources */,

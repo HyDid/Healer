@@ -49,7 +49,7 @@
                 <outlet property="text" destination="cTP-LY-BmU" id="o3C-na-frH"/>
                 <outlet property="title" destination="JFD-5u-efT" id="eei-Wg-Pbj"/>
             </connections>
-            <point key="canvasLocation" x="398.5" y="373.5"/>
+            <point key="canvasLocation" x="343.5" y="373.5"/>
         </view>
     </objects>
 </document>

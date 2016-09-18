@@ -25,6 +25,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"首页";
 
 }
