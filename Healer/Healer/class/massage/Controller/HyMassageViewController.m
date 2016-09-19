@@ -37,16 +37,36 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    // 设置标题文字颜色
     self.navigationItem.title = @"心理按摩院";
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:16];
+    [self.navigationController.navigationBar setTitleTextAttributes:attrs];
+    
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = item;
+    
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"qudingkuang"] forBarMetrics:UIBarMetricsDefault]; // 设置导航栏背景颜色
+    
+    
+//    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51.0/255.0 green:143.0/255.0 blue:210.0/255.0 alpha:0.8]; // 其上默认按钮（比如返回按钮）颜色
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [self.adtableview removeFromSuperview];
+    [self.jitang_one removeFromSuperview];
+    [self.jitang_two removeFromSuperview];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0];
     
     [self addYellowView];
     [self.view addSubview:self.YellowView];
@@ -87,6 +107,12 @@
     [btn_one setImage:[UIImage imageNamed:@"xinliyishengchengse"] forState:UIControlStateHighlighted];
     [btn_one setImage:[UIImage imageNamed:@"xinliyishengchengse"] forState:UIControlStateSelected];
     [btn_one addTarget:self action:@selector(btn_one_OnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIView *lineView = [[UIButton alloc]init];
+    lineView.frame = CGRectMake(ScreenW*0.5, ScreenH*0.01, 1, ScreenH*0.06);
+    lineView.backgroundColor =[UIColor lightGrayColor];
+    [TwoItemView addSubview:lineView];
+    
     UIButton *btn_two = [[UIButton alloc]init];
     btn_two.frame = CGRectMake(ScreenW*0.5, 0, ScreenW*0.5, ScreenH*0.08);
     [btn_two setImage:[UIImage imageNamed:@"xinllingjitanghuise"] forState:UIControlStateNormal];

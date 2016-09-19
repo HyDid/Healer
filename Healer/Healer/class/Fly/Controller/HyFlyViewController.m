@@ -31,7 +31,7 @@ static const int imageCount = 5;
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.navigationItem.title = @"心情纸飞机";
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0];
     
 }
 
@@ -183,6 +183,7 @@ static const int imageCount = 5;
     self.TalkTableView.dataSource = self;
     self.TalkTableView.separatorStyle = NO;
     self.TalkTableView.showsVerticalScrollIndicator = NO;
+    
     //    //失去弹性
     //    self.hytableview.bounces = NO;
     
