@@ -17,6 +17,8 @@
 		044AC28B1D8EB5F200EC908C /* xinlingjitang1View.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC28A1D8EB5F200EC908C /* xinlingjitang1View.m */; };
 		044AC28E1D8EB60B00EC908C /* smallLableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC28D1D8EB60B00EC908C /* smallLableView.m */; };
 		044AC2911D8EB61C00EC908C /* smallLableViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC2901D8EB61C00EC908C /* smallLableViewObject.m */; };
+		0457851B1D9938EE00DCC063 /* HyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045785191D9938EE00DCC063 /* HyLoginViewController.m */; };
+		0457851C1D9938EE00DCC063 /* HyLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0457851A1D9938EE00DCC063 /* HyLoginViewController.xib */; };
 		045DBE961D80220F00CEAB63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBE951D80220F00CEAB63 /* main.m */; };
 		045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */; };
 		045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045DBEA31D80220F00CEAB63 /* Assets.xcassets */; };
@@ -35,6 +37,10 @@
 		045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF141D81712300CEAB63 /* hotMoreView.xib */; };
 		045DBF1B1D81712900CEAB63 /* HotTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBF1A1D81712900CEAB63 /* HotTalk.m */; };
 		045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF1C1D8179BA00CEAB63 /* hottalk.plist */; };
+		0495937F1D9947B9007227CC /* HyFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495937D1D9947B9007227CC /* HyFindPasswordViewController.m */; };
+		049593801D9947B9007227CC /* HyFindPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0495937E1D9947B9007227CC /* HyFindPasswordViewController.xib */; };
+		04E6D3ED1D9956C100C67001 /* HySignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D3EB1D9956C100C67001 /* HySignViewController.m */; };
+		04E6D3EE1D9956C100C67001 /* HySignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E6D3EC1D9956C100C67001 /* HySignViewController.xib */; };
 		051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8467715469124D0E7CB863 /* libPods-Healer.a */; };
 		3BA93BD4B35B96E1291BAAD0 /* libPods-HealerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88ED2B00D85A9EAEB157004C /* libPods-HealerUITests.a */; };
 		901D41A6D6448326EB455E16 /* libPods-HealerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7751DE73A49ADEF1E4ECA6E9 /* libPods-HealerTests.a */; };
@@ -75,6 +81,9 @@
 		044AC28D1D8EB60B00EC908C /* smallLableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smallLableView.m; sourceTree = "<group>"; };
 		044AC28F1D8EB61C00EC908C /* smallLableViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smallLableViewObject.h; sourceTree = "<group>"; };
 		044AC2901D8EB61C00EC908C /* smallLableViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smallLableViewObject.m; sourceTree = "<group>"; };
+		045785181D9938EE00DCC063 /* HyLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginViewController.h; sourceTree = "<group>"; };
+		045785191D9938EE00DCC063 /* HyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginViewController.m; sourceTree = "<group>"; };
+		0457851A1D9938EE00DCC063 /* HyLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyLoginViewController.xib; sourceTree = "<group>"; };
 		045DBE911D80220F00CEAB63 /* Healer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045DBE951D80220F00CEAB63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045DBEA11D80220F00CEAB63 /* Healer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Healer.xcdatamodel; sourceTree = "<group>"; };
@@ -109,6 +118,12 @@
 		045DBF191D81712900CEAB63 /* HotTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotTalk.h; path = ../../massage/Model/HotTalk.h; sourceTree = "<group>"; };
 		045DBF1A1D81712900CEAB63 /* HotTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotTalk.m; path = ../../massage/Model/HotTalk.m; sourceTree = "<group>"; };
 		045DBF1C1D8179BA00CEAB63 /* hottalk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hottalk.plist; sourceTree = "<group>"; };
+		0495937C1D9947B9007227CC /* HyFindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyFindPasswordViewController.h; sourceTree = "<group>"; };
+		0495937D1D9947B9007227CC /* HyFindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyFindPasswordViewController.m; sourceTree = "<group>"; };
+		0495937E1D9947B9007227CC /* HyFindPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyFindPasswordViewController.xib; sourceTree = "<group>"; };
+		04E6D3EA1D9956C100C67001 /* HySignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySignViewController.h; sourceTree = "<group>"; };
+		04E6D3EB1D9956C100C67001 /* HySignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignViewController.m; sourceTree = "<group>"; };
+		04E6D3EC1D9956C100C67001 /* HySignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HySignViewController.xib; sourceTree = "<group>"; };
 		082B2647332ECD851D530746 /* Pods-HealerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealerUITests/Pods-HealerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		11879738F75F0DF39013A748 /* Pods-Healer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healer/Pods-Healer.debug.xcconfig"; sourceTree = "<group>"; };
 		35A687B0CBD5C316FD233EF5 /* Pods-HealerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealerTests/Pods-HealerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +168,46 @@
 			children = (
 			);
 			name = Tool;
+			sourceTree = "<group>";
+		};
+		045785141D9938D600DCC063 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				045785151D9938D600DCC063 /* Controller */,
+				045785161D9938D600DCC063 /* Model */,
+				045785171D9938D600DCC063 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		045785151D9938D600DCC063 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045785181D9938EE00DCC063 /* HyLoginViewController.h */,
+				045785191D9938EE00DCC063 /* HyLoginViewController.m */,
+				0457851A1D9938EE00DCC063 /* HyLoginViewController.xib */,
+				0495937C1D9947B9007227CC /* HyFindPasswordViewController.h */,
+				0495937D1D9947B9007227CC /* HyFindPasswordViewController.m */,
+				0495937E1D9947B9007227CC /* HyFindPasswordViewController.xib */,
+				04E6D3EA1D9956C100C67001 /* HySignViewController.h */,
+				04E6D3EB1D9956C100C67001 /* HySignViewController.m */,
+				04E6D3EC1D9956C100C67001 /* HySignViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045785161D9938D600DCC063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045785171D9938D600DCC063 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		045DBE881D80220F00CEAB63 = {
@@ -219,6 +274,7 @@
 		045DBECC1D8023BB00CEAB63 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				045785141D9938D600DCC063 /* Login */,
 				045DBECD1D8023BB00CEAB63 /* AppDelegate.h */,
 				045DBECE1D8023BB00CEAB63 /* AppDelegate.m */,
 				045DBED31D80251500CEAB63 /* Fly */,
@@ -623,8 +679,11 @@
 			files = (
 				044AC2871D8EB52F00EC908C /* xinlingjitang1.xib in Resources */,
 				045DBF161D81712300CEAB63 /* FellTableViewCell.xib in Resources */,
+				049593801D9947B9007227CC /* HyFindPasswordViewController.xib in Resources */,
 				044AC2841D8EB13D00EC908C /* HyTableViewCell.xib in Resources */,
+				0457851C1D9938EE00DCC063 /* HyLoginViewController.xib in Resources */,
 				045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */,
+				04E6D3EE1D9956C100C67001 /* HySignViewController.xib in Resources */,
 				044AC2881D8EB52F00EC908C /* xinlingjitang2.xib in Resources */,
 				045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */,
 				045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */,
@@ -791,9 +850,12 @@
 				044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */,
 				045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */,
 				045DBEF11D80259A00CEAB63 /* HyHomeViewController.m in Sources */,
+				04E6D3ED1D9956C100C67001 /* HySignViewController.m in Sources */,
 				045DBF171D81712300CEAB63 /* hotMoreView.m in Sources */,
 				045DBED11D8023BB00CEAB63 /* AppDelegate.m in Sources */,
+				0495937F1D9947B9007227CC /* HyFindPasswordViewController.m in Sources */,
 				045DBF1B1D81712900CEAB63 /* HotTalk.m in Sources */,
+				0457851B1D9938EE00DCC063 /* HyLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

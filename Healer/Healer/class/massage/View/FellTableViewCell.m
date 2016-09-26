@@ -34,6 +34,7 @@
 
 
 
+
 -(void)setHottalk:(HotTalk *)hottalk{
     _hottalk = hottalk;
     

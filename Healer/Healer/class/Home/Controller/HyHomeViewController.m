@@ -9,11 +9,13 @@
 #import "HyHomeViewController.h"
 #import "HyFlyViewController.h"
 #import "HyMassageViewController.h"
+#import "HyLoginViewController.h"
 
 @interface HyHomeViewController ()
 @property (nonatomic,strong)UIButton *button;
 @property (nonatomic,strong)HyFlyViewController *HyFly;
 @property (nonatomic,strong)HyMassageViewController *HyMassage;
+@property (nonatomic,strong)HyLoginViewController *HyLoginView;
 @end
 
 
@@ -87,7 +89,8 @@
     
     switch (button.tag) {
         case 0:
-
+            self.HyLoginView =[[HyLoginViewController alloc]init];
+            [self.navigationController pushViewController:self.HyLoginView animated:YES];
             break;
         case 1:
 

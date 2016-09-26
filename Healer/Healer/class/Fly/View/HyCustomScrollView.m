@@ -73,11 +73,6 @@ static const int imageCount = 5;
     
     [self addSubview:self.scrolView];
     
-
-
-    
-
-    
 }
 
 
