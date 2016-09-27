@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041BAA771D9A0CBE00E05B03 /* HyWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAA761D9A0CBE00E05B03 /* HyWelcomeViewController.m */; };
+		041BAA861D9A304F00E05B03 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAA7D1D9A304F00E05B03 /* SVIndefiniteAnimatedView.m */; };
+		041BAA871D9A304F00E05B03 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAA7F1D9A304F00E05B03 /* SVProgressAnimatedView.m */; };
+		041BAA881D9A304F00E05B03 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041BAA811D9A304F00E05B03 /* SVProgressHUD.bundle */; };
+		041BAA891D9A304F00E05B03 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAA831D9A304F00E05B03 /* SVProgressHUD.m */; };
+		041BAA8A1D9A304F00E05B03 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAA851D9A304F00E05B03 /* SVRadialGradientLayer.m */; };
+		041BAD191D9A5A8F00E05B03 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041BAC321D9A5A8F00E05B03 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		041BAD1A1D9A5A8F00E05B03 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAC331D9A5A8F00E05B03 /* TencentOpenAPI.framework */; };
+		041BAD2A1D9A5AEF00E05B03 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD291D9A5AEF00E05B03 /* Security.framework */; };
+		041BAD2C1D9A5B1B00E05B03 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD2B1D9A5B1B00E05B03 /* libiconv.tbd */; };
+		041BAD2E1D9A5B2700E05B03 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD2D1D9A5B2700E05B03 /* SystemConfiguration.framework */; };
+		041BAD301D9A5B3B00E05B03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD2F1D9A5B3B00E05B03 /* CoreGraphics.framework */; };
+		041BAD321D9A5B4B00E05B03 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD311D9A5B4B00E05B03 /* libsqlite3.tbd */; };
+		041BAD341D9A5B5500E05B03 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD331D9A5B5500E05B03 /* CoreTelephony.framework */; };
+		041BAD361D9A5B6700E05B03 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD351D9A5B6700E05B03 /* libstdc++.tbd */; };
+		041BAD381D9A5B7000E05B03 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD371D9A5B7000E05B03 /* libz.tbd */; };
 		044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC2751D8E24D900EC908C /* TheYellowView.m */; };
 		044AC27C1D8E6ABD00EC908C /* LittleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27B1D8E6ABD00EC908C /* LittleButton.m */; };
 		044AC27F1D8EB13300EC908C /* yisheng.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27E1D8EB13300EC908C /* yisheng.m */; };
@@ -64,6 +80,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041BAA751D9A0CBE00E05B03 /* HyWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyWelcomeViewController.h; sourceTree = "<group>"; };
+		041BAA761D9A0CBE00E05B03 /* HyWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyWelcomeViewController.m; sourceTree = "<group>"; };
+		041BAA7C1D9A304F00E05B03 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		041BAA7D1D9A304F00E05B03 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		041BAA7E1D9A304F00E05B03 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		041BAA7F1D9A304F00E05B03 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		041BAA801D9A304F00E05B03 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		041BAA811D9A304F00E05B03 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		041BAA821D9A304F00E05B03 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		041BAA831D9A304F00E05B03 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		041BAA841D9A304F00E05B03 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		041BAA851D9A304F00E05B03 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		041BAC321D9A5A8F00E05B03 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = Healer/Libs/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		041BAC331D9A5A8F00E05B03 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = Healer/Libs/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		041BAD291D9A5AEF00E05B03 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		041BAD2B1D9A5B1B00E05B03 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		041BAD2D1D9A5B2700E05B03 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		041BAD2F1D9A5B3B00E05B03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		041BAD311D9A5B4B00E05B03 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		041BAD331D9A5B5500E05B03 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		041BAD351D9A5B6700E05B03 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		041BAD371D9A5B7000E05B03 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		044AC2741D8E24D900EC908C /* TheYellowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheYellowView.h; sourceTree = "<group>"; };
 		044AC2751D8E24D900EC908C /* TheYellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheYellowView.m; sourceTree = "<group>"; };
 		044AC27A1D8E6ABD00EC908C /* LittleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleButton.h; sourceTree = "<group>"; };
@@ -140,7 +178,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041BAD381D9A5B7000E05B03 /* libz.tbd in Frameworks */,
+				041BAD361D9A5B6700E05B03 /* libstdc++.tbd in Frameworks */,
+				041BAD341D9A5B5500E05B03 /* CoreTelephony.framework in Frameworks */,
+				041BAD321D9A5B4B00E05B03 /* libsqlite3.tbd in Frameworks */,
+				041BAD301D9A5B3B00E05B03 /* CoreGraphics.framework in Frameworks */,
+				041BAD2E1D9A5B2700E05B03 /* SystemConfiguration.framework in Frameworks */,
+				041BAD2C1D9A5B1B00E05B03 /* libiconv.tbd in Frameworks */,
+				041BAD2A1D9A5AEF00E05B03 /* Security.framework in Frameworks */,
 				051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */,
+				041BAD1A1D9A5A8F00E05B03 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +215,55 @@
 			children = (
 			);
 			name = Tool;
+			sourceTree = "<group>";
+		};
+		041BAA731D9A0CA200E05B03 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				041BAA741D9A0CA200E05B03 /* Controller */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		041BAA741D9A0CA200E05B03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041BAA751D9A0CBE00E05B03 /* HyWelcomeViewController.h */,
+				041BAA761D9A0CBE00E05B03 /* HyWelcomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		041BAA791D9A2C4600E05B03 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		041BAA7A1D9A2DCF00E05B03 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				041BAA7B1D9A304F00E05B03 /* SVProgressHUD */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		041BAA7B1D9A304F00E05B03 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				041BAA7C1D9A304F00E05B03 /* SVIndefiniteAnimatedView.h */,
+				041BAA7D1D9A304F00E05B03 /* SVIndefiniteAnimatedView.m */,
+				041BAA7E1D9A304F00E05B03 /* SVProgressAnimatedView.h */,
+				041BAA7F1D9A304F00E05B03 /* SVProgressAnimatedView.m */,
+				041BAA801D9A304F00E05B03 /* SVProgressHUD-Prefix.pch */,
+				041BAA811D9A304F00E05B03 /* SVProgressHUD.bundle */,
+				041BAA821D9A304F00E05B03 /* SVProgressHUD.h */,
+				041BAA831D9A304F00E05B03 /* SVProgressHUD.m */,
+				041BAA841D9A304F00E05B03 /* SVRadialGradientLayer.h */,
+				041BAA851D9A304F00E05B03 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		045785141D9938D600DCC063 /* Login */ = {
@@ -236,9 +332,9 @@
 			isa = PBXGroup;
 			children = (
 				045DBECC1D8023BB00CEAB63 /* class */,
+				041BAA791D9A2C4600E05B03 /* Config */,
+				041BAA7A1D9A2DCF00E05B03 /* Libs */,
 				045DBEA31D80220F00CEAB63 /* Assets.xcassets */,
-				045DBEA81D80220F00CEAB63 /* Info.plist */,
-				045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */,
 				045DBE941D80220F00CEAB63 /* Supporting Files */,
 			);
 			path = Healer;
@@ -247,6 +343,8 @@
 		045DBE941D80220F00CEAB63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				045DBEA01D80220F00CEAB63 /* Healer.xcdatamodeld */,
+				045DBEA81D80220F00CEAB63 /* Info.plist */,
 				045DBF1C1D8179BA00CEAB63 /* hottalk.plist */,
 				045DBE951D80220F00CEAB63 /* main.m */,
 			);
@@ -274,9 +372,10 @@
 		045DBECC1D8023BB00CEAB63 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				045785141D9938D600DCC063 /* Login */,
 				045DBECD1D8023BB00CEAB63 /* AppDelegate.h */,
 				045DBECE1D8023BB00CEAB63 /* AppDelegate.m */,
+				041BAA731D9A0CA200E05B03 /* Welcome */,
+				045785141D9938D600DCC063 /* Login */,
 				045DBED31D80251500CEAB63 /* Fly */,
 				045DBED71D80251500CEAB63 /* Home */,
 				045DBEDB1D80251500CEAB63 /* icon */,
@@ -559,6 +658,16 @@
 		96BE6BF6F539A2CD4951F4D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				041BAD371D9A5B7000E05B03 /* libz.tbd */,
+				041BAD351D9A5B6700E05B03 /* libstdc++.tbd */,
+				041BAD331D9A5B5500E05B03 /* CoreTelephony.framework */,
+				041BAD311D9A5B4B00E05B03 /* libsqlite3.tbd */,
+				041BAD2F1D9A5B3B00E05B03 /* CoreGraphics.framework */,
+				041BAD2D1D9A5B2700E05B03 /* SystemConfiguration.framework */,
+				041BAD2B1D9A5B1B00E05B03 /* libiconv.tbd */,
+				041BAD291D9A5AEF00E05B03 /* Security.framework */,
+				041BAC321D9A5A8F00E05B03 /* TencentOpenApi_IOS_Bundle.bundle */,
+				041BAC331D9A5A8F00E05B03 /* TencentOpenAPI.framework */,
 				7B8467715469124D0E7CB863 /* libPods-Healer.a */,
 				7751DE73A49ADEF1E4ECA6E9 /* libPods-HealerTests.a */,
 				88ED2B00D85A9EAEB157004C /* libPods-HealerUITests.a */,
@@ -659,6 +768,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 045DBE881D80220F00CEAB63;
 			productRefGroup = 045DBE921D80220F00CEAB63 /* Products */;
@@ -684,9 +794,11 @@
 				0457851C1D9938EE00DCC063 /* HyLoginViewController.xib in Resources */,
 				045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */,
 				04E6D3EE1D9956C100C67001 /* HySignViewController.xib in Resources */,
+				041BAD191D9A5A8F00E05B03 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				044AC2881D8EB52F00EC908C /* xinlingjitang2.xib in Resources */,
 				045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */,
 				045DBF181D81712300CEAB63 /* hotMoreView.xib in Resources */,
+				041BAA881D9A304F00E05B03 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,6 +947,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044AC2911D8EB61C00EC908C /* smallLableViewObject.m in Sources */,
+				041BAA871D9A304F00E05B03 /* SVProgressAnimatedView.m in Sources */,
 				044AC2831D8EB13D00EC908C /* HyTableViewCell.m in Sources */,
 				044AC28E1D8EB60B00EC908C /* smallLableView.m in Sources */,
 				044AC27F1D8EB13300EC908C /* yisheng.m in Sources */,
@@ -842,13 +955,17 @@
 				045DBF0C1D8144AF00CEAB63 /* HyCustomScrollView.m in Sources */,
 				045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */,
 				044AC28B1D8EB5F200EC908C /* xinlingjitang1View.m in Sources */,
+				041BAA891D9A304F00E05B03 /* SVProgressHUD.m in Sources */,
+				041BAA771D9A0CBE00E05B03 /* HyWelcomeViewController.m in Sources */,
 				045DBE961D80220F00CEAB63 /* main.m in Sources */,
 				045DBF151D81712300CEAB63 /* FellTableViewCell.m in Sources */,
+				041BAA861D9A304F00E05B03 /* SVIndefiniteAnimatedView.m in Sources */,
 				044AC27C1D8E6ABD00EC908C /* LittleButton.m in Sources */,
 				045DBEFA1D802A8E00CEAB63 /* HyMassageViewController.m in Sources */,
 				045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */,
 				044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */,
 				045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */,
+				041BAA8A1D9A304F00E05B03 /* SVRadialGradientLayer.m in Sources */,
 				045DBEF11D80259A00CEAB63 /* HyHomeViewController.m in Sources */,
 				04E6D3ED1D9956C100C67001 /* HySignViewController.m in Sources */,
 				045DBF171D81712300CEAB63 /* hotMoreView.m in Sources */,
@@ -978,8 +1095,14 @@
 			baseConfigurationReference = 11879738F75F0DF39013A748 /* Pods-Healer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Healer/Libs",
+				);
 				INFOPLIST_FILE = Healer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LIBTOOLFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = Hy.Healer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -990,8 +1113,14 @@
 			baseConfigurationReference = 48EAE4A167B92FDA2DE03321 /* Pods-Healer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Healer/Libs",
+				);
 				INFOPLIST_FILE = Healer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LIBTOOLFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = Hy.Healer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

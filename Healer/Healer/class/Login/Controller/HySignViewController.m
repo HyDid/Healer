@@ -32,7 +32,7 @@
 - (IBAction)fastSign:(id)sender {
 }
 - (IBAction)backJoin:(id)sender {
-        [self.navigationController popViewControllerAnimated:YES]; 
+    [self.navigationController popViewControllerAnimated:YES]; 
 }
 
 

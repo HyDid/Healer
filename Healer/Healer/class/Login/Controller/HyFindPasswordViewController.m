@@ -8,6 +8,10 @@
 
 #import "HyFindPasswordViewController.h"
 
+#import "HyHomeViewController.h"
+
+#import "SVProgressHUD.h"
+
 @interface HyFindPasswordViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumber;
 @property (weak, nonatomic) IBOutlet UITextField *recopy;
@@ -32,6 +36,15 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)join:(id)sender {
+    if ([self.phoneNumber.text  isEqual: @"a"]||[self.passWordFiled.text  isEqual:@"a"]) {
+        [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+        HyHomeViewController *home = [[HyHomeViewController alloc]init];
+        [self.navigationController pushViewController:home animated:YES];
+    }else{
+        [SVProgressHUD showErrorWithStatus:@"登录失败"];
+        //        [SVProgressHUD showWithStatus:@"加载中.."];
+        //        [SVProgressHUD dismiss];
+    }
 }
 
 /*

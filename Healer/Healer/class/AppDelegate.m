@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "HyHomeViewController.h"
+#import "HyWelcomeViewController.h"
+#import <TencentOpenAPI/TencentOAuth.h>
 
 @interface AppDelegate ()
 
@@ -17,13 +19,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    HyHomeViewController *Home = [[HyHomeViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:Home];
-//    nav.navigationBarHidden = YES;
+    
+    
+    
+//    HyHomeViewController *Home = [[HyHomeViewController alloc]init];
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:Home];
+    
+    HyWelcomeViewController *Wel = [[HyWelcomeViewController alloc]init];
 
-    self.window.rootViewController = nav;
+    self.window.rootViewController = Wel;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -130,6 +139,20 @@
             abort();
         }
     }
+}
+
+
+
+
+
+
+//第三方QQ登陆
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [TencentOAuth HandleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [TencentOAuth HandleOpenURL:url];
 }
 
 @end
