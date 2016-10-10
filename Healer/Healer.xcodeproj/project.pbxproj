@@ -23,6 +23,18 @@
 		041BAD341D9A5B5500E05B03 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD331D9A5B5500E05B03 /* CoreTelephony.framework */; };
 		041BAD361D9A5B6700E05B03 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD351D9A5B6700E05B03 /* libstdc++.tbd */; };
 		041BAD381D9A5B7000E05B03 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BAD371D9A5B7000E05B03 /* libz.tbd */; };
+		041BAD6C1D9A97A600E05B03 /* HyBaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD691D9A97A600E05B03 /* HyBaseParam.m */; };
+		041BAD6D1D9A97A600E05B03 /* HyBaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD6B1D9A97A600E05B03 /* HyBaseResult.m */; };
+		041BAD731D9A97C900E05B03 /* HyAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD701D9A97C900E05B03 /* HyAccountTool.m */; };
+		041BAD741D9A97C900E05B03 /* HyHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD721D9A97C900E05B03 /* HyHttpTool.m */; };
+		041BAD861D9A97E300E05B03 /* HyForgetPasswordParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD7A1D9A97E200E05B03 /* HyForgetPasswordParam.m */; };
+		041BAD871D9A97E300E05B03 /* HyForgetPasswordResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD7C1D9A97E200E05B03 /* HyForgetPasswordResult.m */; };
+		041BAD881D9A97E300E05B03 /* HyLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD7E1D9A97E200E05B03 /* HyLoginParam.m */; };
+		041BAD891D9A97E300E05B03 /* HyLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD801D9A97E200E05B03 /* HyLoginResult.m */; };
+		041BAD8A1D9A97E300E05B03 /* HySignParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD821D9A97E200E05B03 /* HySignParam.m */; };
+		041BAD8B1D9A97E300E05B03 /* HySignResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD841D9A97E200E05B03 /* HySignResult.m */; };
+		042EC9BD1D9A9E030060F7B7 /* HyLoginHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EC9BC1D9A9E030060F7B7 /* HyLoginHttpTool.m */; };
+		042EC9C01D9A9FB80060F7B7 /* HyGetCodeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EC9BF1D9A9FB80060F7B7 /* HyGetCodeResult.m */; };
 		044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC2751D8E24D900EC908C /* TheYellowView.m */; };
 		044AC27C1D8E6ABD00EC908C /* LittleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27B1D8E6ABD00EC908C /* LittleButton.m */; };
 		044AC27F1D8EB13300EC908C /* yisheng.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27E1D8EB13300EC908C /* yisheng.m */; };
@@ -102,6 +114,30 @@
 		041BAD331D9A5B5500E05B03 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		041BAD351D9A5B6700E05B03 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		041BAD371D9A5B7000E05B03 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		041BAD681D9A97A600E05B03 /* HyBaseParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBaseParam.h; sourceTree = "<group>"; };
+		041BAD691D9A97A600E05B03 /* HyBaseParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBaseParam.m; sourceTree = "<group>"; };
+		041BAD6A1D9A97A600E05B03 /* HyBaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBaseResult.h; sourceTree = "<group>"; };
+		041BAD6B1D9A97A600E05B03 /* HyBaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBaseResult.m; sourceTree = "<group>"; };
+		041BAD6F1D9A97C900E05B03 /* HyAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyAccountTool.h; sourceTree = "<group>"; };
+		041BAD701D9A97C900E05B03 /* HyAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyAccountTool.m; sourceTree = "<group>"; };
+		041BAD711D9A97C900E05B03 /* HyHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyHttpTool.h; sourceTree = "<group>"; };
+		041BAD721D9A97C900E05B03 /* HyHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyHttpTool.m; sourceTree = "<group>"; };
+		041BAD791D9A97E200E05B03 /* HyForgetPasswordParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyForgetPasswordParam.h; sourceTree = "<group>"; };
+		041BAD7A1D9A97E200E05B03 /* HyForgetPasswordParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyForgetPasswordParam.m; sourceTree = "<group>"; };
+		041BAD7B1D9A97E200E05B03 /* HyForgetPasswordResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyForgetPasswordResult.h; sourceTree = "<group>"; };
+		041BAD7C1D9A97E200E05B03 /* HyForgetPasswordResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyForgetPasswordResult.m; sourceTree = "<group>"; };
+		041BAD7D1D9A97E200E05B03 /* HyLoginParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginParam.h; sourceTree = "<group>"; };
+		041BAD7E1D9A97E200E05B03 /* HyLoginParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginParam.m; sourceTree = "<group>"; };
+		041BAD7F1D9A97E200E05B03 /* HyLoginResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginResult.h; sourceTree = "<group>"; };
+		041BAD801D9A97E200E05B03 /* HyLoginResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginResult.m; sourceTree = "<group>"; };
+		041BAD811D9A97E200E05B03 /* HySignParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySignParam.h; sourceTree = "<group>"; };
+		041BAD821D9A97E200E05B03 /* HySignParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignParam.m; sourceTree = "<group>"; };
+		041BAD831D9A97E200E05B03 /* HySignResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySignResult.h; sourceTree = "<group>"; };
+		041BAD841D9A97E200E05B03 /* HySignResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignResult.m; sourceTree = "<group>"; };
+		042EC9BB1D9A9E030060F7B7 /* HyLoginHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginHttpTool.h; sourceTree = "<group>"; };
+		042EC9BC1D9A9E030060F7B7 /* HyLoginHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginHttpTool.m; sourceTree = "<group>"; };
+		042EC9BE1D9A9FB80060F7B7 /* HyGetCodeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyGetCodeResult.h; sourceTree = "<group>"; };
+		042EC9BF1D9A9FB80060F7B7 /* HyGetCodeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyGetCodeResult.m; sourceTree = "<group>"; };
 		044AC2741D8E24D900EC908C /* TheYellowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheYellowView.h; sourceTree = "<group>"; };
 		044AC2751D8E24D900EC908C /* TheYellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheYellowView.m; sourceTree = "<group>"; };
 		044AC27A1D8E6ABD00EC908C /* LittleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleButton.h; sourceTree = "<group>"; };
@@ -184,9 +220,9 @@
 				041BAD321D9A5B4B00E05B03 /* libsqlite3.tbd in Frameworks */,
 				041BAD301D9A5B3B00E05B03 /* CoreGraphics.framework in Frameworks */,
 				041BAD2E1D9A5B2700E05B03 /* SystemConfiguration.framework in Frameworks */,
+				051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */,
 				041BAD2C1D9A5B1B00E05B03 /* libiconv.tbd in Frameworks */,
 				041BAD2A1D9A5AEF00E05B03 /* Security.framework in Frameworks */,
-				051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */,
 				041BAD1A1D9A5A8F00E05B03 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,16 +270,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		041BAA791D9A2C4600E05B03 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		041BAA7A1D9A2DCF00E05B03 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				042ECA2E1D9AA2350060F7B7 /* MJExtension */,
 				041BAA7B1D9A304F00E05B03 /* SVProgressHUD */,
 			);
 			path = Libs;
@@ -266,9 +296,96 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		041BAD391D9A842100E05B03 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				041BAD6E1D9A97C900E05B03 /* Tool */,
+				041BAD671D9A97A600E05B03 /* Model */,
+				041BAD3A1D9A842100E05B03 /* Controller */,
+				041BAD3E1D9A842100E05B03 /* View */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		041BAD3A1D9A842100E05B03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		041BAD3E1D9A842100E05B03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		041BAD671D9A97A600E05B03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				041BAD681D9A97A600E05B03 /* HyBaseParam.h */,
+				041BAD691D9A97A600E05B03 /* HyBaseParam.m */,
+				041BAD6A1D9A97A600E05B03 /* HyBaseResult.h */,
+				041BAD6B1D9A97A600E05B03 /* HyBaseResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041BAD6E1D9A97C900E05B03 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				041BAD6F1D9A97C900E05B03 /* HyAccountTool.h */,
+				041BAD701D9A97C900E05B03 /* HyAccountTool.m */,
+				041BAD711D9A97C900E05B03 /* HyHttpTool.h */,
+				041BAD721D9A97C900E05B03 /* HyHttpTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		041BAD751D9A97E200E05B03 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				041BAD781D9A97E200E05B03 /* model */,
+				042EC9BB1D9A9E030060F7B7 /* HyLoginHttpTool.h */,
+				042EC9BC1D9A9E030060F7B7 /* HyLoginHttpTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		041BAD781D9A97E200E05B03 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				041BAD791D9A97E200E05B03 /* HyForgetPasswordParam.h */,
+				041BAD7A1D9A97E200E05B03 /* HyForgetPasswordParam.m */,
+				041BAD7B1D9A97E200E05B03 /* HyForgetPasswordResult.h */,
+				041BAD7C1D9A97E200E05B03 /* HyForgetPasswordResult.m */,
+				041BAD7D1D9A97E200E05B03 /* HyLoginParam.h */,
+				041BAD7E1D9A97E200E05B03 /* HyLoginParam.m */,
+				041BAD7F1D9A97E200E05B03 /* HyLoginResult.h */,
+				041BAD801D9A97E200E05B03 /* HyLoginResult.m */,
+				041BAD811D9A97E200E05B03 /* HySignParam.h */,
+				041BAD821D9A97E200E05B03 /* HySignParam.m */,
+				041BAD831D9A97E200E05B03 /* HySignResult.h */,
+				041BAD841D9A97E200E05B03 /* HySignResult.m */,
+				042EC9BE1D9A9FB80060F7B7 /* HyGetCodeResult.h */,
+				042EC9BF1D9A9FB80060F7B7 /* HyGetCodeResult.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		042ECA2E1D9AA2350060F7B7 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MJExtension;
+			path = MJExtension/MJExtension;
+			sourceTree = "<group>";
+		};
 		045785141D9938D600DCC063 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				041BAD751D9A97E200E05B03 /* Tool */,
 				045785151D9938D600DCC063 /* Controller */,
 				045785161D9938D600DCC063 /* Model */,
 				045785171D9938D600DCC063 /* View */,
@@ -331,8 +448,8 @@
 		045DBE931D80220F00CEAB63 /* Healer */ = {
 			isa = PBXGroup;
 			children = (
+				041BAD391D9A842100E05B03 /* Config */,
 				045DBECC1D8023BB00CEAB63 /* class */,
-				041BAA791D9A2C4600E05B03 /* Config */,
 				041BAA7A1D9A2DCF00E05B03 /* Libs */,
 				045DBEA31D80220F00CEAB63 /* Assets.xcassets */,
 				045DBE941D80220F00CEAB63 /* Supporting Files */,
@@ -946,24 +1063,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041BAD861D9A97E300E05B03 /* HyForgetPasswordParam.m in Sources */,
 				044AC2911D8EB61C00EC908C /* smallLableViewObject.m in Sources */,
 				041BAA871D9A304F00E05B03 /* SVProgressAnimatedView.m in Sources */,
+				041BAD731D9A97C900E05B03 /* HyAccountTool.m in Sources */,
 				044AC2831D8EB13D00EC908C /* HyTableViewCell.m in Sources */,
 				044AC28E1D8EB60B00EC908C /* smallLableView.m in Sources */,
 				044AC27F1D8EB13300EC908C /* yisheng.m in Sources */,
+				041BAD8A1D9A97E300E05B03 /* HySignParam.m in Sources */,
 				045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */,
 				045DBF0C1D8144AF00CEAB63 /* HyCustomScrollView.m in Sources */,
 				045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */,
+				041BAD8B1D9A97E300E05B03 /* HySignResult.m in Sources */,
+				041BAD871D9A97E300E05B03 /* HyForgetPasswordResult.m in Sources */,
 				044AC28B1D8EB5F200EC908C /* xinlingjitang1View.m in Sources */,
+				041BAD6C1D9A97A600E05B03 /* HyBaseParam.m in Sources */,
 				041BAA891D9A304F00E05B03 /* SVProgressHUD.m in Sources */,
 				041BAA771D9A0CBE00E05B03 /* HyWelcomeViewController.m in Sources */,
 				045DBE961D80220F00CEAB63 /* main.m in Sources */,
+				042EC9C01D9A9FB80060F7B7 /* HyGetCodeResult.m in Sources */,
 				045DBF151D81712300CEAB63 /* FellTableViewCell.m in Sources */,
+				041BAD741D9A97C900E05B03 /* HyHttpTool.m in Sources */,
 				041BAA861D9A304F00E05B03 /* SVIndefiniteAnimatedView.m in Sources */,
 				044AC27C1D8E6ABD00EC908C /* LittleButton.m in Sources */,
+				041BAD881D9A97E300E05B03 /* HyLoginParam.m in Sources */,
 				045DBEFA1D802A8E00CEAB63 /* HyMassageViewController.m in Sources */,
+				041BAD891D9A97E300E05B03 /* HyLoginResult.m in Sources */,
 				045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */,
+				042EC9BD1D9A9E030060F7B7 /* HyLoginHttpTool.m in Sources */,
 				044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */,
+				041BAD6D1D9A97A600E05B03 /* HyBaseResult.m in Sources */,
 				045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */,
 				041BAA8A1D9A304F00E05B03 /* SVRadialGradientLayer.m in Sources */,
 				045DBEF11D80259A00CEAB63 /* HyHomeViewController.m in Sources */,
@@ -1099,6 +1228,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Healer/Libs",
+					"$(PROJECT_DIR)/Healer/Libs/AFNetworking",
 				);
 				INFOPLIST_FILE = Healer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1117,6 +1247,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Healer/Libs",
+					"$(PROJECT_DIR)/Healer/Libs/AFNetworking",
 				);
 				INFOPLIST_FILE = Healer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

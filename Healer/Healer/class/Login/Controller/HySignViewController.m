@@ -7,6 +7,9 @@
 //
 
 #import "HySignViewController.h"
+#import "HySignParam.h"
+#import "HySignResult.h"
+#import "HyLoginHttpTool.h"
 
 @interface HySignViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *phonenumberFiled;
@@ -30,6 +33,18 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)fastSign:(id)sender {
+    
+        HySignResult *param = [[HySignResult alloc]init];;
+        param.username = self.phonenumberFiled.text;
+        param.code = self.copField.text;
+        param.password = self.passwordFiled.text;
+    [HyLoginHttpTool postForSignWithParameter:param success:^(HySignResult *result) {
+        NSLog(@"%@",result);
+    } failure:^(NSError *error) {
+        
+    }];
+
+
 }
 - (IBAction)backJoin:(id)sender {
     [self.navigationController popViewControllerAnimated:YES]; 

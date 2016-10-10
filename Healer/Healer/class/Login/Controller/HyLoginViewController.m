@@ -10,6 +10,8 @@
 #import "HySignViewController.h"
 #import "HyFindPasswordViewController.h"
 #import "HyHomeViewController.h"
+#import "HyLoginHttpTool.h"
+#import "HyLoginParam.h"
 
 #import "SVProgressHUD.h"
 
@@ -62,15 +64,31 @@
 
 //登陆
 - (IBAction)join:(id)sender {
-    if ([self.PhoneNumberTextInput.text  isEqual: @"a"]||[self.passwordTextInput.text  isEqual:@"a"]) {
-        [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
-        HyHomeViewController *home = [[HyHomeViewController alloc]init];
-        [self.navigationController pushViewController:home animated:YES];
-    }else{
-        [SVProgressHUD showErrorWithStatus:@"登录失败"];
-//        [SVProgressHUD showWithStatus:@"加载中.."];
-//        [SVProgressHUD dismiss];
-    }
+//    if ([self.PhoneNumberTextInput.text  isEqual: @"a"]||[self.passwordTextInput.text  isEqual:@"a"]) {
+//        [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
+//        HyHomeViewController *home = [[HyHomeViewController alloc]init];
+//        [self.navigationController pushViewController:home animated:YES];
+//    }else{
+//        [SVProgressHUD showErrorWithStatus:@"登录失败"];
+////        [SVProgressHUD showWithStatus:@"加载中.."];
+////        [SVProgressHUD dismiss];
+//    }
+    
+    HyLoginParam *param = [[HyLoginParam alloc]init];
+    param.username = self.PhoneNumberTextInput.text;
+    param.password = self.passwordTextInput.text;
+
+    [HyLoginHttpTool postForLoginWithParameter:param success:^(HyLoginResult *result) {
+        if (result.success) {
+            NSLog(@"%@",result);
+        }else{
+            
+        }
+        
+
+    } failure:^(NSError *error) {
+         NSLog(@"%@",error);
+    }];
     
 }
 //注册
