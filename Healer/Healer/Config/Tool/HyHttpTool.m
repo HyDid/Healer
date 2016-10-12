@@ -13,7 +13,7 @@
 +(void)postWithURL:(NSString *)url parameter:(NSDictionary *)param  success:(void (^)(id json))success failure:(void (^)(NSError *error))failure{
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     
-//    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
+    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html",@"text/plain", nil];
     
     mgr.requestSerializer.timeoutInterval = 10;
     [mgr POST:url parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -25,7 +25,7 @@
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (failure) {
-            NSLog(@"%@",error);
+            NSLog(@"-----------------------------------%@",error);
             failure(error);
         }
     }];

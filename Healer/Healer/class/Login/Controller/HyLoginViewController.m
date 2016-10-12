@@ -81,16 +81,22 @@
     [HyLoginHttpTool postForLoginWithParameter:param success:^(HyLoginResult *result) {
         if (result.success) {
             NSLog(@"%@",result);
-        }else{
-            
+            [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+            [self.navigationController popViewControllerAnimated:YES];
+
         }
+        
         
 
     } failure:^(NSError *error) {
          NSLog(@"%@",error);
+        [SVProgressHUD showSuccessWithStatus:@"登录失败"];
+
     }];
     
 }
+
+
 //注册
 - (IBAction)newPerson:(id)sender {
     HySignViewController *HySign = [[HySignViewController alloc]init];

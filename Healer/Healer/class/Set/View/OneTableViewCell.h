@@ -1,5 +1,5 @@
 //
-//  HySetViewController.h
+//  OneTableViewCell.h
 //  Healer
 //
 //  Created by LiHongYu on 16/10/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HySetViewController : UIViewController
+@interface OneTableViewCell : UITableViewCell
 
 @end

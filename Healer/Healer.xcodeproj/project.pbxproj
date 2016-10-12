@@ -54,7 +54,6 @@
 		045DBEBD1D80220F00CEAB63 /* HealerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEBC1D80220F00CEAB63 /* HealerUITests.m */; };
 		045DBED11D8023BB00CEAB63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBECE1D8023BB00CEAB63 /* AppDelegate.m */; };
 		045DBEF11D80259A00CEAB63 /* HyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF01D80259A00CEAB63 /* HyHomeViewController.m */; };
-		045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF31D802A5900CEAB63 /* HySetViewController.m */; };
 		045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF61D802A7600CEAB63 /* HyFlyViewController.m */; };
 		045DBEFA1D802A8E00CEAB63 /* HyMassageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEF91D802A8E00CEAB63 /* HyMassageViewController.m */; };
 		045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045DBEFF1D80379500CEAB63 /* HyBaseViewController.m */; };
@@ -67,6 +66,13 @@
 		045DBF1D1D8179BA00CEAB63 /* hottalk.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045DBF1C1D8179BA00CEAB63 /* hottalk.plist */; };
 		0495937F1D9947B9007227CC /* HyFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495937D1D9947B9007227CC /* HyFindPasswordViewController.m */; };
 		049593801D9947B9007227CC /* HyFindPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0495937E1D9947B9007227CC /* HyFindPasswordViewController.xib */; };
+		04B9FC3F1DAE684D0058CC78 /* HySetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC3E1DAE684D0058CC78 /* HySetViewController.m */; };
+		04B9FC431DAE6FFE0058CC78 /* OneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC411DAE6FFE0058CC78 /* OneTableViewCell.m */; };
+		04B9FC441DAE6FFE0058CC78 /* OneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC421DAE6FFE0058CC78 /* OneTableViewCell.xib */; };
+		04B9FC481DAE70150058CC78 /* TwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC461DAE70150058CC78 /* TwoTableViewCell.m */; };
+		04B9FC491DAE70150058CC78 /* TwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC471DAE70150058CC78 /* TwoTableViewCell.xib */; };
+		04B9FC4D1DAE70220058CC78 /* ThreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC4B1DAE70220058CC78 /* ThreeTableViewCell.m */; };
+		04B9FC4E1DAE70220058CC78 /* ThreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC4C1DAE70220058CC78 /* ThreeTableViewCell.xib */; };
 		04E6D3ED1D9956C100C67001 /* HySignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D3EB1D9956C100C67001 /* HySignViewController.m */; };
 		04E6D3EE1D9956C100C67001 /* HySignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E6D3EC1D9956C100C67001 /* HySignViewController.xib */; };
 		051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8467715469124D0E7CB863 /* libPods-Healer.a */; };
@@ -173,8 +179,6 @@
 		045DBECE1D8023BB00CEAB63 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		045DBEEF1D80259A00CEAB63 /* HyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyHomeViewController.h; sourceTree = "<group>"; };
 		045DBEF01D80259A00CEAB63 /* HyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyHomeViewController.m; sourceTree = "<group>"; };
-		045DBEF21D802A5900CEAB63 /* HySetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySetViewController.h; sourceTree = "<group>"; };
-		045DBEF31D802A5900CEAB63 /* HySetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySetViewController.m; sourceTree = "<group>"; };
 		045DBEF51D802A7600CEAB63 /* HyFlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyFlyViewController.h; sourceTree = "<group>"; };
 		045DBEF61D802A7600CEAB63 /* HyFlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyFlyViewController.m; sourceTree = "<group>"; };
 		045DBEF81D802A8E00CEAB63 /* HyMassageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMassageViewController.h; sourceTree = "<group>"; };
@@ -195,6 +199,17 @@
 		0495937C1D9947B9007227CC /* HyFindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyFindPasswordViewController.h; sourceTree = "<group>"; };
 		0495937D1D9947B9007227CC /* HyFindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyFindPasswordViewController.m; sourceTree = "<group>"; };
 		0495937E1D9947B9007227CC /* HyFindPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyFindPasswordViewController.xib; sourceTree = "<group>"; };
+		04B9FC3D1DAE684D0058CC78 /* HySetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySetViewController.h; sourceTree = "<group>"; };
+		04B9FC3E1DAE684D0058CC78 /* HySetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySetViewController.m; sourceTree = "<group>"; };
+		04B9FC401DAE6FFE0058CC78 /* OneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneTableViewCell.h; sourceTree = "<group>"; };
+		04B9FC411DAE6FFE0058CC78 /* OneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTableViewCell.m; sourceTree = "<group>"; };
+		04B9FC421DAE6FFE0058CC78 /* OneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneTableViewCell.xib; sourceTree = "<group>"; };
+		04B9FC451DAE70150058CC78 /* TwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoTableViewCell.h; sourceTree = "<group>"; };
+		04B9FC461DAE70150058CC78 /* TwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoTableViewCell.m; sourceTree = "<group>"; };
+		04B9FC471DAE70150058CC78 /* TwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoTableViewCell.xib; sourceTree = "<group>"; };
+		04B9FC4A1DAE70220058CC78 /* ThreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeTableViewCell.h; sourceTree = "<group>"; };
+		04B9FC4B1DAE70220058CC78 /* ThreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeTableViewCell.m; sourceTree = "<group>"; };
+		04B9FC4C1DAE70220058CC78 /* ThreeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeTableViewCell.xib; sourceTree = "<group>"; };
 		04E6D3EA1D9956C100C67001 /* HySignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySignViewController.h; sourceTree = "<group>"; };
 		04E6D3EB1D9956C100C67001 /* HySignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignViewController.m; sourceTree = "<group>"; };
 		04E6D3EC1D9956C100C67001 /* HySignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HySignViewController.xib; sourceTree = "<group>"; };
@@ -739,8 +754,8 @@
 		045DBEEC1D80251600CEAB63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				045DBEF21D802A5900CEAB63 /* HySetViewController.h */,
-				045DBEF31D802A5900CEAB63 /* HySetViewController.m */,
+				04B9FC3D1DAE684D0058CC78 /* HySetViewController.h */,
+				04B9FC3E1DAE684D0058CC78 /* HySetViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -755,6 +770,15 @@
 		045DBEEE1D80251600CEAB63 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04B9FC401DAE6FFE0058CC78 /* OneTableViewCell.h */,
+				04B9FC411DAE6FFE0058CC78 /* OneTableViewCell.m */,
+				04B9FC421DAE6FFE0058CC78 /* OneTableViewCell.xib */,
+				04B9FC451DAE70150058CC78 /* TwoTableViewCell.h */,
+				04B9FC461DAE70150058CC78 /* TwoTableViewCell.m */,
+				04B9FC471DAE70150058CC78 /* TwoTableViewCell.xib */,
+				04B9FC4A1DAE70220058CC78 /* ThreeTableViewCell.h */,
+				04B9FC4B1DAE70220058CC78 /* ThreeTableViewCell.m */,
+				04B9FC4C1DAE70220058CC78 /* ThreeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -904,7 +928,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B9FC4E1DAE70220058CC78 /* ThreeTableViewCell.xib in Resources */,
 				044AC2871D8EB52F00EC908C /* xinlingjitang1.xib in Resources */,
+				04B9FC441DAE6FFE0058CC78 /* OneTableViewCell.xib in Resources */,
+				04B9FC491DAE70150058CC78 /* TwoTableViewCell.xib in Resources */,
 				045DBF161D81712300CEAB63 /* FellTableViewCell.xib in Resources */,
 				049593801D9947B9007227CC /* HyFindPasswordViewController.xib in Resources */,
 				044AC2841D8EB13D00EC908C /* HyTableViewCell.xib in Resources */,
@@ -1073,7 +1100,6 @@
 				041BAD8A1D9A97E300E05B03 /* HySignParam.m in Sources */,
 				045DBEA21D80220F00CEAB63 /* Healer.xcdatamodeld in Sources */,
 				045DBF0C1D8144AF00CEAB63 /* HyCustomScrollView.m in Sources */,
-				045DBEF41D802A5900CEAB63 /* HySetViewController.m in Sources */,
 				041BAD8B1D9A97E300E05B03 /* HySignResult.m in Sources */,
 				041BAD871D9A97E300E05B03 /* HyForgetPasswordResult.m in Sources */,
 				044AC28B1D8EB5F200EC908C /* xinlingjitang1View.m in Sources */,
@@ -1082,6 +1108,7 @@
 				041BAA771D9A0CBE00E05B03 /* HyWelcomeViewController.m in Sources */,
 				045DBE961D80220F00CEAB63 /* main.m in Sources */,
 				042EC9C01D9A9FB80060F7B7 /* HyGetCodeResult.m in Sources */,
+				04B9FC431DAE6FFE0058CC78 /* OneTableViewCell.m in Sources */,
 				045DBF151D81712300CEAB63 /* FellTableViewCell.m in Sources */,
 				041BAD741D9A97C900E05B03 /* HyHttpTool.m in Sources */,
 				041BAA861D9A304F00E05B03 /* SVIndefiniteAnimatedView.m in Sources */,
@@ -1091,6 +1118,9 @@
 				041BAD891D9A97E300E05B03 /* HyLoginResult.m in Sources */,
 				045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */,
 				042EC9BD1D9A9E030060F7B7 /* HyLoginHttpTool.m in Sources */,
+				04B9FC4D1DAE70220058CC78 /* ThreeTableViewCell.m in Sources */,
+				04B9FC481DAE70150058CC78 /* TwoTableViewCell.m in Sources */,
+				04B9FC3F1DAE684D0058CC78 /* HySetViewController.m in Sources */,
 				044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */,
 				041BAD6D1D9A97A600E05B03 /* HyBaseResult.m in Sources */,
 				045DBEF71D802A7600CEAB63 /* HyFlyViewController.m in Sources */,

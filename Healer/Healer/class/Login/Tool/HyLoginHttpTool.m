@@ -36,7 +36,7 @@
 
 +(void)postForLoginWithParameter:(HyLoginParam *)param success:(void (^)(HyLoginResult *result))success failure:(void (^)(NSError *error))failure{
     
-        NSString *postURL = [NSString stringWithFormat:@"http://127.0.0.1/test/response.php"];
+        NSString *postURL = [NSString stringWithFormat:@"http://localhost:8080/iCCUT/servlet/join"];
         [HyHttpTool postWithURL:postURL parameter:param.mj_keyValues success:^(id json) {
             HyLoginResult *result = [HyLoginResult mj_objectWithKeyValues:json];
             if(success){

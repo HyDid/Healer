@@ -1,5 +1,5 @@
 //
-//  HySetViewController.h
+//  TwoTableViewCell.h
 //  Healer
 //
 //  Created by LiHongYu on 16/10/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HySetViewController : UIViewController
+@interface TwoTableViewCell : UITableViewCell
 
 @end

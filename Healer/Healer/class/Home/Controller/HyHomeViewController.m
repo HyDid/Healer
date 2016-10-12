@@ -10,12 +10,14 @@
 #import "HyFlyViewController.h"
 #import "HyMassageViewController.h"
 #import "HyLoginViewController.h"
+#import "HySetViewController.h"
 
 @interface HyHomeViewController ()
 @property (nonatomic,strong)UIButton *button;
 @property (nonatomic,strong)HyFlyViewController *HyFly;
 @property (nonatomic,strong)HyMassageViewController *HyMassage;
 @property (nonatomic,strong)HyLoginViewController *HyLoginView;
+@property (nonatomic,strong)HySetViewController *HySetView;
 @end
 
 
@@ -106,6 +108,15 @@
         case 4:
             self.HyMassage =[[HyMassageViewController alloc]init];
             [self.navigationController pushViewController:self.HyMassage animated:YES];
+            
+            break;
+        case 5:
+
+            
+            break;
+        case 6:
+            self.HySetView =[[HySetViewController alloc]init];
+            [self.navigationController pushViewController:self.HySetView animated:YES];
             
             break;
             
