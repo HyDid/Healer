@@ -75,6 +75,7 @@
 		04B9FC4E1DAE70220058CC78 /* ThreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC4C1DAE70220058CC78 /* ThreeTableViewCell.xib */; };
 		04E6D3ED1D9956C100C67001 /* HySignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D3EB1D9956C100C67001 /* HySignViewController.m */; };
 		04E6D3EE1D9956C100C67001 /* HySignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E6D3EC1D9956C100C67001 /* HySignViewController.xib */; };
+		04F343931DDB03E90055364D /* HyDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F343921DDB03E90055364D /* HyDiaryViewController.m */; };
 		051C30CF5419EBB200659EE8 /* libPods-Healer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8467715469124D0E7CB863 /* libPods-Healer.a */; };
 		3BA93BD4B35B96E1291BAAD0 /* libPods-HealerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88ED2B00D85A9EAEB157004C /* libPods-HealerUITests.a */; };
 		901D41A6D6448326EB455E16 /* libPods-HealerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7751DE73A49ADEF1E4ECA6E9 /* libPods-HealerTests.a */; };
@@ -213,6 +214,8 @@
 		04E6D3EA1D9956C100C67001 /* HySignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySignViewController.h; sourceTree = "<group>"; };
 		04E6D3EB1D9956C100C67001 /* HySignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignViewController.m; sourceTree = "<group>"; };
 		04E6D3EC1D9956C100C67001 /* HySignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HySignViewController.xib; sourceTree = "<group>"; };
+		04F343911DDB03E90055364D /* HyDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyDiaryViewController.h; sourceTree = "<group>"; };
+		04F343921DDB03E90055364D /* HyDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyDiaryViewController.m; sourceTree = "<group>"; };
 		082B2647332ECD851D530746 /* Pods-HealerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealerUITests/Pods-HealerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		11879738F75F0DF39013A748 /* Pods-Healer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healer/Pods-Healer.debug.xcconfig"; sourceTree = "<group>"; };
 		35A687B0CBD5C316FD233EF5 /* Pods-HealerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealerTests/Pods-HealerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -723,6 +726,8 @@
 		045DBEE81D80251600CEAB63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04F343911DDB03E90055364D /* HyDiaryViewController.h */,
+				04F343921DDB03E90055364D /* HyDiaryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1120,6 +1125,7 @@
 				042EC9BD1D9A9E030060F7B7 /* HyLoginHttpTool.m in Sources */,
 				04B9FC4D1DAE70220058CC78 /* ThreeTableViewCell.m in Sources */,
 				04B9FC481DAE70150058CC78 /* TwoTableViewCell.m in Sources */,
+				04F343931DDB03E90055364D /* HyDiaryViewController.m in Sources */,
 				04B9FC3F1DAE684D0058CC78 /* HySetViewController.m in Sources */,
 				044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */,
 				041BAD6D1D9A97A600E05B03 /* HyBaseResult.m in Sources */,

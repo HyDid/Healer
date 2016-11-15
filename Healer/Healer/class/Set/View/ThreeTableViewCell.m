@@ -21,4 +21,18 @@
     // Configure the view for the selected state
 }
 
++(CGFloat)cellhight{
+    return 50;
+}
+
++(ThreeTableViewCell *)cellWithTableview:(UITableView *)tableview{
+    static NSString *ID = @"id";
+    ThreeTableViewCell *cell = [tableview dequeueReusableCellWithIdentifier:ID ];
+    
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"ThreeTableViewCell" owner:nil options:nil]lastObject];
+    }
+    return cell;
+}
+
 @end

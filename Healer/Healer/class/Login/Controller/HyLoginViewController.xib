@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -19,14 +19,6 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="DzI-7e-DxA"/>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABk-Rk-oeJ">
-                    <frame key="frameInset" minX="16" minY="33" width="25" height="25"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="return"/>
-                    <connections>
-                        <action selector="goback:" destination="-1" eventType="touchUpInside" id="8rf-IN-eo0"/>
-                    </connections>
-                </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="input" translatesAutoresizingMaskIntoConstraints="NO" id="v1A-9I-e2R">
                     <frame key="frameInset" minX="61" minY="244" width="273" height="41"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,9 +92,11 @@
                     <frame key="frameInset" minX="72" minY="305" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSZ-XP-TNE">
-                    <frame key="frameInset" minX="158" minY="30" width="59" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSZ-XP-TNE">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="PXb-Yb-cNq"/>
+                        <constraint firstAttribute="width" constant="59" id="hco-q8-fUR"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -138,13 +132,27 @@
                     <frame key="frameInset" minX="152" minY="100" width="70" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvR-7P-EcW">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="AHR-Ao-mDi"/>
+                        <constraint firstAttribute="width" constant="25" id="vja-5e-aKV"/>
+                    </constraints>
+                    <state key="normal" image="return"/>
+                    <connections>
+                        <action selector="goback:" destination="-1" eventType="touchUpInside" id="0If-Nw-Mqz"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="rvR-7P-EcW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="7TO-CU-whi"/>
                 <constraint firstItem="DzI-7e-DxA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="D5U-hs-and"/>
                 <constraint firstItem="DzI-7e-DxA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GtZ-Me-gyz"/>
+                <constraint firstItem="rvR-7P-EcW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Nex-wt-dAB"/>
                 <constraint firstAttribute="bottom" secondItem="DzI-7e-DxA" secondAttribute="bottom" id="Niq-WB-OCr"/>
                 <constraint firstAttribute="trailing" secondItem="DzI-7e-DxA" secondAttribute="trailing" id="iO8-6a-YBU"/>
+                <constraint firstItem="fSZ-XP-TNE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pd7-Nn-3aj"/>
+                <constraint firstItem="fSZ-XP-TNE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="xRX-rf-g6Y"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>

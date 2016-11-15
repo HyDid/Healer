@@ -34,7 +34,7 @@
 }
 - (IBAction)fastSign:(id)sender {
     
-        HySignResult *param = [[HySignResult alloc]init];;
+        HySignParam *param = [[HySignParam alloc]init];;
         param.username = self.phonenumberFiled.text;
         param.code = self.copField.text;
         param.password = self.passwordFiled.text;

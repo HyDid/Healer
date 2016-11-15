@@ -10,4 +10,8 @@
 
 @interface TwoTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *labtext;
+
++(TwoTableViewCell *)cellWithTableview:(UITableView *)tableview;
++(CGFloat)cellhight;
 @end

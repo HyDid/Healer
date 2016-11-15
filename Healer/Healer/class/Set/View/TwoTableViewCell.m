@@ -21,4 +21,18 @@
     // Configure the view for the selected state
 }
 
++(CGFloat)cellhight{
+    return 50;
+}
+
++(TwoTableViewCell *)cellWithTableview:(UITableView *)tableview{
+    static NSString *ID = @"id";
+    TwoTableViewCell *cell = [tableview dequeueReusableCellWithIdentifier:ID ];
+    
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"TwoTableViewCell" owner:nil options:nil]lastObject];
+    }
+    return cell;
+}
+
 @end

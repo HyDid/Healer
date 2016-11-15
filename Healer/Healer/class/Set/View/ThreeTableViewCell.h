@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ThreeTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *labtext;
 
++(ThreeTableViewCell *)cellWithTableview:(UITableView *)tableview;
++(CGFloat)cellhight;
 @end

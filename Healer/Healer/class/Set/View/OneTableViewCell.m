@@ -20,5 +20,18 @@
 
     // Configure the view for the selected state
 }
++(CGFloat)cellhight{
+    return 50;
+}
+
++(OneTableViewCell *)cellWithTableview:(UITableView *)tableview{
+    static NSString *ID = @"id";
+    OneTableViewCell *cell = [tableview dequeueReusableCellWithIdentifier:ID ];
+    
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"OneTableViewCell" owner:nil options:nil]lastObject];
+    }
+    return cell;
+}
 
 @end

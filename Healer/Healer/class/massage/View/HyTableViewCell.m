@@ -10,9 +10,7 @@
 
 @implementation HyTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
+
 
 +(HyTableViewCell *)cellWithTableview:(UITableView *)tableview{
     

@@ -7,6 +7,9 @@
 //
 
 #import "HySetViewController.h"
+#import "OneTableViewCell.h"
+#import "TwoTableViewCell.h"
+#import "ThreeTableViewCell.h"
 
 @interface HySetViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -53,7 +56,7 @@
     seTableView.dataSource = self;
     seTableView.bounces = NO;
     seTableView.scrollEnabled = NO;
-    seTableView.separatorStyle = NO;
+    seTableView.separatorStyle = UITableViewCellSelectionStyleNone;
     self.SeTableView = seTableView;
 }
 
@@ -102,10 +105,71 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    if (indexPath.section == 0) {
+        OneTableViewCell *cell = [OneTableViewCell cellWithTableview:self.SeTableView];
+        if (indexPath.row == 0) {
+            cell.icon.image = [UIImage imageNamed:@"xiaoxitongzhi"];
+//            cell.labtext.text = @"消息通知";
+            [self setLabel:cell.labtext string:@"消息通知" withLineSpacing:1];
+        }else if (indexPath.row == 1){
+            cell.icon.image = [UIImage imageNamed:@"yijianfankui"];
+//            cell.labtext.text = @"意见反馈";
+            [self setLabel:cell.labtext string:@"意见反馈" withLineSpacing:1];
+        }else if (indexPath.row == 2){
+            cell.icon.image = [UIImage imageNamed:@"tupianjieshou"];
+//            cell.labtext.text = @"图片接收";
+            [self setLabel:cell.labtext string:@"图片接收" withLineSpacing:1];
+            
+        }else if (indexPath.row == 3){
+            cell.icon.image = [UIImage imageNamed:@"quanxian"];
+//            cell.labtext.text = @"权限与隐私";
+            [self setLabel:cell.labtext string:@"权限与隐私" withLineSpacing:1];
+            
+        }else if (indexPath.row == 4){
+            cell.icon.image = [UIImage imageNamed:@"huancun"];
+//            cell.labtext.text = @"清除系统缓存";
+            [self setLabel:cell.labtext string:@"清除系统缓存" withLineSpacing:1];
+            
+        }
+        return cell;
+    }else if (indexPath.section == 1){
+        TwoTableViewCell *cell = [TwoTableViewCell cellWithTableview:self.SeTableView];
+        [self setLabel:cell.labtext string:@"关于Healer" withLineSpacing:1];
+        return cell;
+        
+    }else if (indexPath.section == 2){
+        ThreeTableViewCell *cell = [ThreeTableViewCell cellWithTableview:self.SeTableView];
+        [self setLabel:cell.labtext string:@"退出登录" withLineSpacing:1];
+        cell.labtext.textColor = [UIColor redColor];
+        return cell;
+        
+    }
+    
 
-    cell.backgroundColor = [UIColor whiteColor];
-    return cell;
+    return [[UITableViewCell alloc]init];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.SeTableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+//设置文字
+-(void)setLabel:(UILabel *)label string:(NSString *)str withLineSpacing:(CGFloat)space{
+    NSMutableAttributedString * mas=[[NSMutableAttributedString alloc]init];
+    NSMutableParagraphStyle * style=[NSMutableParagraphStyle new];
+    style.alignment=NSTextAlignmentLeft;
+//    style.lineSpacing=space;
+    style.lineBreakMode = UILineBreakModeTailTruncation;
+//    style.paragraphSpacing=space;
+    NSDictionary * attributesDict=@{
+                                    NSFontAttributeName:[UIFont systemFontOfSize:16],		//label.text字体大小
+                                    NSForegroundColorAttributeName:[UIColor colorWithRed:80/255.0f green:80/255.0f blue:80/255.0f alpha:1/1.0f],	//label.textColor 字体颜色
+                                    NSParagraphStyleAttributeName:style
+                                    };
+    NSAttributedString *as=[[NSAttributedString alloc]initWithString:str attributes:attributesDict];
+    [mas appendAttributedString:as];
+    [label setAttributedText:mas];
+     label.numberOfLines = space;
 }
 
 

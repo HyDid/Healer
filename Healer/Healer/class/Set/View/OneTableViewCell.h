@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface OneTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UILabel *rightlab;
 
+@property (weak, nonatomic) IBOutlet UILabel *labtext;
+
++(OneTableViewCell *)cellWithTableview:(UITableView *)tableview;
++(CGFloat)cellhight;
 @end

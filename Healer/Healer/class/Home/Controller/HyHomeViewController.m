@@ -7,6 +7,7 @@
 //
 
 #import "HyHomeViewController.h"
+#import "HyDiaryViewController.h"
 #import "HyFlyViewController.h"
 #import "HyMassageViewController.h"
 #import "HyLoginViewController.h"
@@ -14,10 +15,11 @@
 
 @interface HyHomeViewController ()
 @property (nonatomic,strong)UIButton *button;
-@property (nonatomic,strong)HyFlyViewController *HyFly;
-@property (nonatomic,strong)HyMassageViewController *HyMassage;
-@property (nonatomic,strong)HyLoginViewController *HyLoginView;
-@property (nonatomic,strong)HySetViewController *HySetView;
+@property (nonatomic,strong)HyFlyViewController *HyFlyController;
+@property (nonatomic,strong)HyMassageViewController *HyMassageController;
+@property (nonatomic,strong)HyLoginViewController *HyLoginViewController;
+@property (nonatomic,strong)HyDiaryViewController *HyDiaryViewController;
+@property (nonatomic,strong)HySetViewController *HySetViewController;
 @end
 
 
@@ -91,23 +93,24 @@
     
     switch (button.tag) {
         case 0:
-            self.HyLoginView =[[HyLoginViewController alloc]init];
-            [self.navigationController pushViewController:self.HyLoginView animated:YES];
+            self.HyLoginViewController =[[HyLoginViewController alloc]init];
+            [self.navigationController pushViewController:self.HyLoginViewController animated:YES];
             break;
         case 1:
 
             break;
         case 2:
-
+            self.HyDiaryViewController =[[HyDiaryViewController alloc]init];
+            [self.navigationController pushViewController:self.HyDiaryViewController animated:YES];
             break;
         case 3:
-            self.HyFly =[[HyFlyViewController alloc]init];
-            [self.navigationController pushViewController:self.HyFly animated:YES];
+            self.HyFlyController =[[HyFlyViewController alloc]init];
+            [self.navigationController pushViewController:self.HyFlyController animated:YES];
             
             break;
         case 4:
-            self.HyMassage =[[HyMassageViewController alloc]init];
-            [self.navigationController pushViewController:self.HyMassage animated:YES];
+            self.HyMassageController =[[HyMassageViewController alloc]init];
+            [self.navigationController pushViewController:self.HyMassageController animated:YES];
             
             break;
         case 5:
@@ -115,8 +118,8 @@
             
             break;
         case 6:
-            self.HySetView =[[HySetViewController alloc]init];
-            [self.navigationController pushViewController:self.HySetView animated:YES];
+            self.HySetViewController =[[HySetViewController alloc]init];
+            [self.navigationController pushViewController:self.HySetViewController animated:YES];
             
             break;
             
