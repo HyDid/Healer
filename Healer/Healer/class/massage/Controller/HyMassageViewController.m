@@ -226,6 +226,8 @@
 //TwoBarButton response event
 -(void)didbtnOnClick:(NSString *)textFieldString{
     NSLog(@"确定=======%@",textFieldString);
+    [self removebtn:self.speedBtn];
+    NSLog(@"确定=======%@",self.speedBtn.titleLabel.text);
 }
 
 
