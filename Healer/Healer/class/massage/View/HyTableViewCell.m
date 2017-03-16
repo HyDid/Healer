@@ -40,7 +40,7 @@
     self.name.text = yisheng.name;
     self.labl.text = yisheng.labl;
     self.icon.image = [UIImage imageNamed:yisheng.icon];
-    self.number.text = [NSString stringWithFormat:@"%d",yisheng.number];
+    self.number.text = yisheng.number;
 
 }
 

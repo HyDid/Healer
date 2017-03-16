@@ -9,9 +9,19 @@
 #import "HyFlyViewController.h"
 #import "FellTableViewCell.h"
 #import "hotMoreView.h"
+#import "HyDiaryViewController.h"
+
+#import "HyFlyHttpTool.h"
+#import "Flyparam.h"
+#import "flyResult.h"
+#import "AFNetworking.h"
+
+#import "SVProgressHUD.h"
 //#import "AFNetworking.h"
 
 @interface HyFlyViewController ()<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong)HyDiaryViewController *HyDiaryViewController;
 
 @property (nonatomic,weak)UIScrollView *scrolView;
 @property (nonatomic,weak)UIPageControl *pagecontrol;
@@ -19,6 +29,8 @@
 @property (nonatomic,weak)UITableView  *TalkTableView;
 @property (nonatomic,copy)NSMutableArray *hotTalkArray;
 @property (nonatomic,weak)hotMoreView *moreView;
+
+@property (nonatomic,copy)NSString * Str;
 @end
 
 @implementation HyFlyViewController
@@ -34,6 +46,7 @@ static const int imageCount = 5;
     self.view.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0];
     
 }
+
 
 
 - (void)viewDidLoad {
@@ -55,10 +68,39 @@ static const int imageCount = 5;
 //        
 //    }];
     
+    Flyparam *param = [[Flyparam alloc]init];
+    param.key = @"6ec4eb1c7470c8edc8883f89acbe1abd";
+    param.sort = @"asc";
+    param.time = @"1489629000";
+        param.page = 1;
+        param.pagesize = 3;
+    
+    [HyFlyHttpTool getWithParameter:param success:^(flyResult *results) {
+        NSLog(@"*************************%d,%@,%@",results.error_code,results.reason,results.result);
+       
+        NSMutableArray *dict = [results.result objectForKey:@"data"];
+        
+        self.Str = [dict[0] objectForKey:@"content"];
+        
+        NSLog(@"%@",[dict[0] objectForKey:@"content"]);
+        NSLog(@"%@",[dict[0] objectForKey:@"hashId"]);
+        NSLog(@"%@",[dict[0] objectForKey:@"unixtime"]);
+        NSLog(@"%@",[dict[0] objectForKey:@"updatetime"]);
+    } failure:^(NSError *error) {
+        
+    }];
+    
+
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"hottalk.plist" ofType:nil];
+    
     NSArray *talkDicts = [NSArray arrayWithContentsOfFile:path];
+    
     for (NSDictionary *dict in talkDicts) {
+        
+        NSLog(@"----%@",self.Str);
+     //   [dict setValue:self.Str forKey:@"edit"];
+        
         HotTalk *hottalk = [HotTalk hottalkWithDict:dict];
         [self.hotTalkArray addObject:hottalk];
     }
@@ -195,13 +237,21 @@ static const int imageCount = 5;
 
     switch (btn.tag) {
         case 0:
-            NSLog(@"------0");
+            self.HyDiaryViewController =[[HyDiaryViewController alloc]init];
+            [self.navigationController pushViewController:self.HyDiaryViewController animated:YES];
             break;
         case 1:
-            NSLog(@"------1");
+            [SVProgressHUD showErrorWithStatus:@"暂未开放"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+           
             break;
         case 2:
-            NSLog(@"------2");
+            [SVProgressHUD showErrorWithStatus:@"暂未开放"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
             break;
             
         default:

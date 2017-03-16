@@ -12,14 +12,14 @@
 
 @implementation HyBaseParam
 
--(NSString *)token{
-    HyLoginResult *result = [HyAccountTool account];
-    if (![result.token isEqualToString:@""]) {
-        return result.token;
-    }else{
-        return nil;
-    }
-}
+//-(NSString *)token{
+//    HyLoginResult *result = [HyAccountTool account];
+//    if (![result.token isEqualToString:@""]) {
+//        return result.token;
+//    }else{
+//        return nil;
+//    }
+//}
 
 +(instancetype)param{
     return [[self alloc] init];

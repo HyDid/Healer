@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>number</key>
+		<string>87</string>
+		<key>icon</key>
+		<string>liubigang.png</string>
+		<key>name</key>
+		<string>刘碧刚</string>
+		<key>labl</key>
+		<string>用健康的新零售户另一颗健康的心</string>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>68</string>
+		<key>icon</key>
+		<string>zhaotianwen.png</string>
+		<key>name</key>
+		<string>赵甜雯</string>
+		<key>labl</key>
+		<string>一个热爱生活的人，运气不会太差</string>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>77</string>
+		<key>icon</key>
+		<string>wenying.png</string>
+		<key>name</key>
+		<string>文颖</string>
+		<key>labl</key>
+		<string>这家伙很懒，什么也没留下</string>
+	</dict>
+</array>
+</plist>

@@ -13,6 +13,8 @@
 #import "HyLoginViewController.h"
 #import "HySetViewController.h"
 
+#import "SVProgressHUD.h"
+
 @interface HyHomeViewController ()
 @property (nonatomic,strong)UIButton *button;
 @property (nonatomic,strong)HyFlyViewController *HyFlyController;
@@ -97,7 +99,8 @@
             [self.navigationController pushViewController:self.HyLoginViewController animated:YES];
             break;
         case 1:
-
+            self.HyLoginViewController =[[HyLoginViewController alloc]init];
+            [self.navigationController pushViewController:self.HyLoginViewController animated:YES];
             break;
         case 2:
             self.HyDiaryViewController =[[HyDiaryViewController alloc]init];
@@ -110,11 +113,15 @@
             break;
         case 4:
             self.HyMassageController =[[HyMassageViewController alloc]init];
-            [self.navigationController pushViewController:self.HyMassageController animated:YES];
+            [self.navigationController pushViewController:self.HyMassageController animated:NO];
             
             break;
         case 5:
 
+            [SVProgressHUD showErrorWithStatus:@"暂未开放,敬请期待"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
             
             break;
         case 6:

@@ -10,6 +10,9 @@
 #import "OneTableViewCell.h"
 #import "TwoTableViewCell.h"
 #import "ThreeTableViewCell.h"
+#import "SVProgressHUD.h"
+
+#import "HyAccountTool.h"
 
 @interface HySetViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -151,6 +154,56 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.SeTableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 0) {
+        
+        if (indexPath.row == 0) {
+            
+            [SVProgressHUD showErrorWithStatus:@"近期无消息"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+
+        }else if (indexPath.row == 1){
+            [SVProgressHUD showErrorWithStatus:@"近期无意见反馈"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+        }else if (indexPath.row == 2){
+            [SVProgressHUD showErrorWithStatus:@"近期无图片接收"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+        }else if (indexPath.row == 3){
+            
+        }else if (indexPath.row == 4){
+            [SVProgressHUD showWithStatus:@"缓存清理中"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+        }
+        
+    }else if (indexPath.section == 1){
+        
+        
+       NSString *str = @"版本（Healer 1.0）介绍: 1.由app获取并且推送的每日轻松励志小故事。2.“心情纸飞机”中，写下自己的压力，发泄自己的压力，查看未知人群的压力。3.“心理按摩院”中，寻求医师的心理辅导。寻找自我解压的方式方法。";
+        
+        [SVProgressHUD showInfoWithStatus:str];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
+    }else if (indexPath.section == 2){
+        
+        [SVProgressHUD showSuccessWithStatus:@"退出登录成功"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
+        
+        [HyAccountTool exit];
+        
+        [self.navigationController popViewControllerAnimated:YES];
+        
+    }
 }
 
 //设置文字

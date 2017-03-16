@@ -15,6 +15,8 @@
 
 #import "SVProgressHUD.h"
 
+#import "HyAccountTool.h"
+
 #import <TencentOpenAPI/TencentOAuth.h>
 
 @interface HyLoginViewController ()<TencentSessionDelegate>
@@ -79,18 +81,35 @@
     param.password = self.passwordTextInput.text;
 
     [HyLoginHttpTool postForLoginWithParameter:param success:^(HyLoginResult *result) {
+        NSLog(@"%@,%hhu,%@",result.msg,result.success,result.token);
         if (result.success) {
             NSLog(@"%@",result);
             [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+            
             [self.navigationController popViewControllerAnimated:YES];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+            
+            [HyAccountTool savaAccount:result];
 
+        }else{
+
+            [SVProgressHUD showErrorWithStatus:@"用户名或密码不正确"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+            
         }
         
         
 
     } failure:^(NSError *error) {
          NSLog(@"%@",error);
-        [SVProgressHUD showSuccessWithStatus:@"登录失败"];
+        [SVProgressHUD showErrorWithStatus:@"与服务器连接失败"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
 
     }];
     
@@ -115,6 +134,9 @@
 - (void)tencentDidLogin
 {
         [SVProgressHUD showSuccessWithStatus:@"登录完成"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
+    });
     
     if (tencentOAuth.accessToken && 0 != [tencentOAuth.accessToken length])
     {
@@ -126,6 +148,9 @@
     else
     {
         [SVProgressHUD showErrorWithStatus:@"登录不成功 没有获取accesstoken"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
     }
 }
 
@@ -138,9 +163,15 @@
         resultLable.text = @"用户取消登录";
         
          [SVProgressHUD showErrorWithStatus:@"用户取消登录"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
     }else{
         resultLable.text = @"登录失败";
         [SVProgressHUD showErrorWithStatus:@"登录失败"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
     }
 }
 // 网络错误导致登录失败：
@@ -149,6 +180,9 @@
     NSLog(@"tencentDidNotNetWork");
     resultLable.text = @"无网络连接，请设置网络";
     [SVProgressHUD showErrorWithStatus: @"无网络连接，请设置网络"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
+    });
 
 }
 

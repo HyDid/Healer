@@ -35,6 +35,10 @@
 		041BAD8B1D9A97E300E05B03 /* HySignResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD841D9A97E200E05B03 /* HySignResult.m */; };
 		042EC9BD1D9A9E030060F7B7 /* HyLoginHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EC9BC1D9A9E030060F7B7 /* HyLoginHttpTool.m */; };
 		042EC9C01D9A9FB80060F7B7 /* HyGetCodeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EC9BF1D9A9FB80060F7B7 /* HyGetCodeResult.m */; };
+		04349FB81E796D2100224956 /* HyFlyHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349FB71E796D2100224956 /* HyFlyHttpTool.m */; };
+		04349FBC1E796D7400224956 /* Flyparam.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349FBB1E796D7400224956 /* Flyparam.m */; };
+		04349FBF1E796DA900224956 /* flyResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349FBE1E796DA900224956 /* flyResult.m */; };
+		04349FC11E7A3F1900224956 /* Doctor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04349FC01E7A3F1900224956 /* Doctor.plist */; };
 		044AC2761D8E24D900EC908C /* TheYellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC2751D8E24D900EC908C /* TheYellowView.m */; };
 		044AC27C1D8E6ABD00EC908C /* LittleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27B1D8E6ABD00EC908C /* LittleButton.m */; };
 		044AC27F1D8EB13300EC908C /* yisheng.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC27E1D8EB13300EC908C /* yisheng.m */; };
@@ -145,6 +149,13 @@
 		042EC9BC1D9A9E030060F7B7 /* HyLoginHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginHttpTool.m; sourceTree = "<group>"; };
 		042EC9BE1D9A9FB80060F7B7 /* HyGetCodeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyGetCodeResult.h; sourceTree = "<group>"; };
 		042EC9BF1D9A9FB80060F7B7 /* HyGetCodeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyGetCodeResult.m; sourceTree = "<group>"; };
+		04349FB61E796D2100224956 /* HyFlyHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyFlyHttpTool.h; sourceTree = "<group>"; };
+		04349FB71E796D2100224956 /* HyFlyHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyFlyHttpTool.m; sourceTree = "<group>"; };
+		04349FBA1E796D7400224956 /* Flyparam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flyparam.h; sourceTree = "<group>"; };
+		04349FBB1E796D7400224956 /* Flyparam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flyparam.m; sourceTree = "<group>"; };
+		04349FBD1E796DA900224956 /* flyResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flyResult.h; path = ../../../Login/Tool/model/flyResult.h; sourceTree = "<group>"; };
+		04349FBE1E796DA900224956 /* flyResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = flyResult.m; path = ../../../Login/Tool/model/flyResult.m; sourceTree = "<group>"; };
+		04349FC01E7A3F1900224956 /* Doctor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Doctor.plist; sourceTree = "<group>"; };
 		044AC2741D8E24D900EC908C /* TheYellowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheYellowView.h; sourceTree = "<group>"; };
 		044AC2751D8E24D900EC908C /* TheYellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheYellowView.m; sourceTree = "<group>"; };
 		044AC27A1D8E6ABD00EC908C /* LittleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleButton.h; sourceTree = "<group>"; };
@@ -400,6 +411,27 @@
 			path = MJExtension/MJExtension;
 			sourceTree = "<group>";
 		};
+		04349FB51E796CF500224956 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				04349FB91E796D6000224956 /* Model */,
+				04349FB61E796D2100224956 /* HyFlyHttpTool.h */,
+				04349FB71E796D2100224956 /* HyFlyHttpTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		04349FB91E796D6000224956 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04349FBD1E796DA900224956 /* flyResult.h */,
+				04349FBE1E796DA900224956 /* flyResult.m */,
+				04349FBA1E796D7400224956 /* Flyparam.h */,
+				04349FBB1E796D7400224956 /* Flyparam.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		045785141D9938D600DCC063 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +514,7 @@
 				045DBEA81D80220F00CEAB63 /* Info.plist */,
 				045DBF1C1D8179BA00CEAB63 /* hottalk.plist */,
 				045DBE951D80220F00CEAB63 /* main.m */,
+				04349FC01E7A3F1900224956 /* Doctor.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -525,6 +558,7 @@
 		045DBED31D80251500CEAB63 /* Fly */ = {
 			isa = PBXGroup;
 			children = (
+				04349FB51E796CF500224956 /* Tool */,
 				045DBED41D80251500CEAB63 /* Controller */,
 				045DBED51D80251500CEAB63 /* Model */,
 				045DBED61D80251500CEAB63 /* View */,
@@ -896,6 +930,7 @@
 				TargetAttributes = {
 					045DBE901D80220F00CEAB63 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 77UD393KBV;
 					};
 					045DBEAC1D80220F00CEAB63 = {
 						CreatedOnToolsVersion = 7.3;
@@ -934,6 +969,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B9FC4E1DAE70220058CC78 /* ThreeTableViewCell.xib in Resources */,
+				04349FC11E7A3F1900224956 /* Doctor.plist in Resources */,
 				044AC2871D8EB52F00EC908C /* xinlingjitang1.xib in Resources */,
 				04B9FC441DAE6FFE0058CC78 /* OneTableViewCell.xib in Resources */,
 				04B9FC491DAE70150058CC78 /* TwoTableViewCell.xib in Resources */,
@@ -1095,6 +1131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04349FBF1E796DA900224956 /* flyResult.m in Sources */,
 				041BAD861D9A97E300E05B03 /* HyForgetPasswordParam.m in Sources */,
 				044AC2911D8EB61C00EC908C /* smallLableViewObject.m in Sources */,
 				041BAA871D9A304F00E05B03 /* SVProgressAnimatedView.m in Sources */,
@@ -1123,7 +1160,9 @@
 				041BAD891D9A97E300E05B03 /* HyLoginResult.m in Sources */,
 				045DBF001D80379500CEAB63 /* HyBaseViewController.m in Sources */,
 				042EC9BD1D9A9E030060F7B7 /* HyLoginHttpTool.m in Sources */,
+				04349FB81E796D2100224956 /* HyFlyHttpTool.m in Sources */,
 				04B9FC4D1DAE70220058CC78 /* ThreeTableViewCell.m in Sources */,
+				04349FBC1E796D7400224956 /* Flyparam.m in Sources */,
 				04B9FC481DAE70150058CC78 /* TwoTableViewCell.m in Sources */,
 				04F343931DDB03E90055364D /* HyDiaryViewController.m in Sources */,
 				04B9FC3F1DAE684D0058CC78 /* HySetViewController.m in Sources */,
@@ -1260,6 +1299,7 @@
 			baseConfigurationReference = 11879738F75F0DF39013A748 /* Pods-Healer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77UD393KBV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1267,6 +1307,7 @@
 					"$(PROJECT_DIR)/Healer/Libs/AFNetworking",
 				);
 				INFOPLIST_FILE = Healer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LIBTOOLFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = Hy.Healer;
@@ -1279,6 +1320,7 @@
 			baseConfigurationReference = 48EAE4A167B92FDA2DE03321 /* Pods-Healer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77UD393KBV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1286,6 +1328,7 @@
 					"$(PROJECT_DIR)/Healer/Libs/AFNetworking",
 				);
 				INFOPLIST_FILE = Healer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LIBTOOLFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = Hy.Healer;

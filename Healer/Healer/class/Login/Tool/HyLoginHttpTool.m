@@ -41,6 +41,7 @@
             HyLoginResult *result = [HyLoginResult mj_objectWithKeyValues:json];
             if(success){
                 success(result);
+                
             }
         } failure:^(NSError *error) {
             if(failure){

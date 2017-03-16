@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface yisheng : NSObject
-@property (strong, nonatomic)NSString *icon;
-@property (strong, nonatomic)NSString *name;
+@property (copy, nonatomic)NSString *icon;
+@property (copy, nonatomic)NSString *name;
+@property (copy, nonatomic)NSString *number;
+@property (copy, nonatomic)NSString *labl;
 
-@property (assign, nonatomic)int number;
-@property (strong, nonatomic)NSString *labl;
+
 -(instancetype)initWithdict:(NSDictionary*)dict;
 +(instancetype)yishengWithdict:(NSDictionary*)dict;
 

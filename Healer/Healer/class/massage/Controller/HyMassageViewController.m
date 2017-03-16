@@ -28,6 +28,8 @@
 @property (strong,nonatomic)UIView *jitang_one;
 @property (strong,nonatomic)UIView *jitang_two;
 
+@property (nonatomic,copy)NSMutableArray *hotTalkArray;
+
 @end
 
 
@@ -81,7 +83,27 @@
     
     
     _rightButton.selected = YES;
+    
+    
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"Doctor.plist" ofType:nil];
+    
+    NSArray *talkDicts = [NSArray arrayWithContentsOfFile:path];
+    
+    for (NSDictionary *dict in talkDicts) {
+        
+        
+        yisheng *yi = [yisheng yishengWithdict:dict];
+        [self.hotTalkArray addObject:yi];
+    }
 }
+
+-(NSMutableArray *)hotTalkArray{
+    if (!_hotTalkArray) {
+        _hotTalkArray = [NSMutableArray array];
+    }
+    return _hotTalkArray;
+}
+
 
 -(void)addYellowView{
     
@@ -213,13 +235,24 @@
     return 70;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return self.hotTalkArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HyTableViewCell *cell = [HyTableViewCell cellWithTableview:self.adtableview];
     
+  
+    cell.yisheng = self.hotTalkArray[indexPath.row];
+    
     return cell;
+}
+
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [self.adtableview deselectRowAtIndexPath:indexPath animated:YES];
+    
+    
 }
 
 

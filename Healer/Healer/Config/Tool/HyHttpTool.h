@@ -11,4 +11,5 @@
 @interface HyHttpTool : NSObject
 
 +(void)postWithURL:(NSString *)url parameter:(NSDictionary *)param  success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
++(void)getWithURL:(NSString *)url parameter:(NSDictionary *)param  success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
 @end
