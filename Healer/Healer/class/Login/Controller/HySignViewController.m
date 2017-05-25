@@ -11,6 +11,7 @@
 #import "HySignResult.h"
 #import "HyLoginHttpTool.h"
 
+
 @interface HySignViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *phonenumberFiled;
 @property (weak, nonatomic) IBOutlet UITextField *passwordFiled;
@@ -33,7 +34,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)fastSign:(id)sender {
-    
+
+
         HySignParam *param = [[HySignParam alloc]init];;
         param.username = self.phonenumberFiled.text;
         param.code = self.copField.text;

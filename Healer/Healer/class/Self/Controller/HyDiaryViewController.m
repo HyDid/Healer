@@ -54,7 +54,7 @@
     UILabel *customLable = [[UILabel alloc]init];
     customLable.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 50);
     customLable.text = @"1234年05月06日 记";
-    customLable.textAlignment=UITextAlignmentCenter;
+    customLable.textAlignment = NSTextAlignmentCenter;
     customLable.font = [UIFont systemFontOfSize:13];
     customLable.textColor = [UIColor lightGrayColor];
     
@@ -98,7 +98,7 @@
     
 }
 -(void)buttonrightOnclick{
-    
+    _customTextView.text = nil;
 }
 
 @end

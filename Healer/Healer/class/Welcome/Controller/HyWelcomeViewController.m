@@ -22,7 +22,7 @@
 
 -(NSArray *)welcomeImages{
     if (!_welcomeImages) {
-        _welcomeImages = [NSArray arrayWithObjects:@"welcome",@"welcome", nil];
+        _welcomeImages = [NSArray arrayWithObjects:@"welcome", nil];
     }
     return _welcomeImages;
 }
@@ -34,7 +34,10 @@
     [self setupScrollView];
     
     //2. 设置分页
-    [self setupPageControl];
+  //  [self setupPageControl];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2ull * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self login];
+    });
 }
 
 -(void)setupScrollView{

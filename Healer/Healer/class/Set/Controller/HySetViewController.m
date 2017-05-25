@@ -212,7 +212,8 @@
     NSMutableParagraphStyle * style=[NSMutableParagraphStyle new];
     style.alignment=NSTextAlignmentLeft;
 //    style.lineSpacing=space;
-    style.lineBreakMode = UILineBreakModeTailTruncation;
+    
+    style.lineBreakMode = NSLineBreakByTruncatingMiddle;
 //    style.paragraphSpacing=space;
     NSDictionary * attributesDict=@{
                                     NSFontAttributeName:[UIFont systemFontOfSize:16],		//label.text字体大小
