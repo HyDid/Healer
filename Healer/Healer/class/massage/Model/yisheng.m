@@ -11,13 +11,11 @@
 @implementation yisheng
 
 
-
 -(instancetype)initWithdict:(NSDictionary *)dict{
     if (self =[super init]) {
         [self setValuesForKeysWithDictionary:dict];
     }return self;
 }
-
 
 +(instancetype)yishengWithdict:(NSDictionary *)dict{
     return [[self alloc]initWithdict:dict];

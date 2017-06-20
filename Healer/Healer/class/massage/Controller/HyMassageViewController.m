@@ -6,9 +6,6 @@
 //  Copyright © 2016年 LiHongYu. All rights reserved.
 //
 
-#define ScreenW [UIScreen mainScreen].bounds.size.width
-#define ScreenH [UIScreen mainScreen].bounds.size.height
-#define rectNavH self.navigationController.navigationBar.frame.size.height
 
 #import "HyMassageViewController.h"
 #import "TheYellowView.h"
@@ -58,13 +55,16 @@
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     
 
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [self.adtableview removeFromSuperview];
-    [self.jitang_one removeFromSuperview];
-    [self.jitang_two removeFromSuperview];
 }
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -76,6 +76,7 @@
     [self.view addSubview:self.TwoItemView];
     [self addTableview];
     [self.view addSubview:self.adtableview];
+
     [self creatspeedbtn];
     
     [self.view addSubview:_jitang_one];
@@ -156,16 +157,16 @@
 
 -(void)addTableview{
     UITableView *tableview = [[UITableView alloc]init];
-    tableview.frame = CGRectMake(-ScreenW, rectNavH+ScreenH*0.58, ScreenW, ScreenH*0.42-rectNavH);
+    tableview.frame = CGRectMake(0, rectNavH+ScreenH*0.58, ScreenW, ScreenH*0.42-rectNavH);
     tableview.delegate = self;
     tableview.dataSource = self;
     self.adtableview = tableview;
     
     
     self.jitang_one = [[[NSBundle mainBundle]loadNibNamed:@"xinlingjitang1" owner:nil options:nil]lastObject];
-    self.jitang_one.frame = CGRectMake(0, rectNavH+ScreenH*0.59, ScreenW, 110);
+    self.jitang_one.frame = CGRectMake(0, rectNavH+ScreenH*0.59, ScreenW, 120);
     self.jitang_two = [[[NSBundle mainBundle]loadNibNamed:@"xinlingjitang2" owner:nil options:nil]lastObject];
-    self.jitang_two.frame = CGRectMake(0, 557, ScreenW, 110);
+    self.jitang_two.frame = CGRectMake(0, 557, ScreenW, 120);
 
 }
 
@@ -243,7 +244,6 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HyTableViewCell *cell = [HyTableViewCell cellWithTableview:self.adtableview];
     
-  
     cell.yisheng = self.hotTalkArray[indexPath.row];
     
     return cell;

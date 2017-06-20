@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HyHomeViewController.h"
-#import "HyWelcomeViewController.h"
+//#import "HyWelcomeViewController.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 
 @interface AppDelegate ()
@@ -20,19 +20,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
-    
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
-    
-    
-//    HyHomeViewController *Home = [[HyHomeViewController alloc]init];
-//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:Home];
-    
-    HyWelcomeViewController *Wel = [[HyWelcomeViewController alloc]init];
-
-    self.window.rootViewController = Wel;
+    HyHomeViewController *Home = [[HyHomeViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:Home];
+//    HyWelcomeViewController *Wel = [[HyWelcomeViewController alloc]init]
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

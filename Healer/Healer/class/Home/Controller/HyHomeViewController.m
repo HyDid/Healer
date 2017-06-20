@@ -113,7 +113,7 @@
             break;
         case 4:
             self.HyMassageController =[[HyMassageViewController alloc]init];
-            [self.navigationController pushViewController:self.HyMassageController animated:NO];
+            [self.navigationController pushViewController:self.HyMassageController animated:YES];
             
             break;
         case 5:

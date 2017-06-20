@@ -35,6 +35,7 @@
 		041BAD8B1D9A97E300E05B03 /* HySignResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BAD841D9A97E200E05B03 /* HySignResult.m */; };
 		042EC9BD1D9A9E030060F7B7 /* HyLoginHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EC9BC1D9A9E030060F7B7 /* HyLoginHttpTool.m */; };
 		042EC9C01D9A9FB80060F7B7 /* HyGetCodeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EC9BF1D9A9FB80060F7B7 /* HyGetCodeResult.m */; };
+		042F19FD1EF8DF85007D9E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042F19FC1EF8DF85007D9E86 /* LaunchScreen.storyboard */; };
 		04349FB81E796D2100224956 /* HyFlyHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349FB71E796D2100224956 /* HyFlyHttpTool.m */; };
 		04349FBC1E796D7400224956 /* Flyparam.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349FBB1E796D7400224956 /* Flyparam.m */; };
 		04349FBF1E796DA900224956 /* flyResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349FBE1E796DA900224956 /* flyResult.m */; };
@@ -149,6 +150,8 @@
 		042EC9BC1D9A9E030060F7B7 /* HyLoginHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginHttpTool.m; sourceTree = "<group>"; };
 		042EC9BE1D9A9FB80060F7B7 /* HyGetCodeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyGetCodeResult.h; sourceTree = "<group>"; };
 		042EC9BF1D9A9FB80060F7B7 /* HyGetCodeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyGetCodeResult.m; sourceTree = "<group>"; };
+		042F19FC1EF8DF85007D9E86 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		042F19FE1EF8E08A007D9E86 /* Hyprefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hyprefix.h; sourceTree = "<group>"; };
 		04349FB61E796D2100224956 /* HyFlyHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyFlyHttpTool.h; sourceTree = "<group>"; };
 		04349FB71E796D2100224956 /* HyFlyHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyFlyHttpTool.m; sourceTree = "<group>"; };
 		04349FBA1E796D7400224956 /* Flyparam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flyparam.h; sourceTree = "<group>"; };
@@ -285,6 +288,7 @@
 		041BAA731D9A0CA200E05B03 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				045785141D9938D600DCC063 /* Login */,
 				041BAA741D9A0CA200E05B03 /* Controller */,
 			);
 			path = Welcome;
@@ -332,6 +336,7 @@
 				041BAD671D9A97A600E05B03 /* Model */,
 				041BAD3A1D9A842100E05B03 /* Controller */,
 				041BAD3E1D9A842100E05B03 /* View */,
+				042F19FE1EF8E08A007D9E86 /* Hyprefix.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -440,7 +445,8 @@
 				045785161D9938D600DCC063 /* Model */,
 				045785171D9938D600DCC063 /* View */,
 			);
-			path = Login;
+			name = Login;
+			path = ../Login;
 			sourceTree = "<group>";
 		};
 		045785151D9938D600DCC063 /* Controller */ = {
@@ -502,6 +508,7 @@
 				045DBECC1D8023BB00CEAB63 /* class */,
 				041BAA7A1D9A2DCF00E05B03 /* Libs */,
 				045DBEA31D80220F00CEAB63 /* Assets.xcassets */,
+				042F19FC1EF8DF85007D9E86 /* LaunchScreen.storyboard */,
 				045DBE941D80220F00CEAB63 /* Supporting Files */,
 			);
 			path = Healer;
@@ -542,11 +549,10 @@
 			children = (
 				045DBECD1D8023BB00CEAB63 /* AppDelegate.h */,
 				045DBECE1D8023BB00CEAB63 /* AppDelegate.m */,
-				041BAA731D9A0CA200E05B03 /* Welcome */,
-				045785141D9938D600DCC063 /* Login */,
-				045DBED31D80251500CEAB63 /* Fly */,
-				045DBED71D80251500CEAB63 /* Home */,
 				045DBEDB1D80251500CEAB63 /* icon */,
+				041BAA731D9A0CA200E05B03 /* Welcome */,
+				045DBED71D80251500CEAB63 /* Home */,
+				045DBED31D80251500CEAB63 /* Fly */,
 				045DBEDF1D80251500CEAB63 /* massage */,
 				045DBEE31D80251500CEAB63 /* me */,
 				045DBEE71D80251500CEAB63 /* Self */,
@@ -975,6 +981,7 @@
 				04B9FC491DAE70150058CC78 /* TwoTableViewCell.xib in Resources */,
 				045DBF161D81712300CEAB63 /* FellTableViewCell.xib in Resources */,
 				049593801D9947B9007227CC /* HyFindPasswordViewController.xib in Resources */,
+				042F19FD1EF8DF85007D9E86 /* LaunchScreen.storyboard in Resources */,
 				044AC2841D8EB13D00EC908C /* HyTableViewCell.xib in Resources */,
 				0457851C1D9938EE00DCC063 /* HyLoginViewController.xib in Resources */,
 				045DBEA41D80220F00CEAB63 /* Assets.xcassets in Resources */,
@@ -1242,6 +1249,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Healer/Config/Hyprefix.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1287,6 +1296,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Healer/Config/Hyprefix.h";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
